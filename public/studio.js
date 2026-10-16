@@ -1,4 +1,4 @@
-import {bodyHTML,safeImage} from './article-format.js';
+import {bodyHTML,safeImage,inline} from './article-format.js';
 const $=s=>document.querySelector(s),form=$('#article-form'),notice=$('#notice');
 const csrf=document.querySelector('meta[name="csrf-token"]').content;
 let articles=[],active=null,dirty=false,busy=false,pending=null,uploading=false,loaded=false;
@@ -13,7 +13,7 @@ function selectArticle(a){active={...a};for(const k of fields)form.elements[k].v
 function choose(a){if(busy||uploading)return;if(dirty){pending=a;$('#discard-dialog').showModal();return}selectArticle(a)}
 $('#keep-editing').addEventListener('click',()=>{$('#discard-dialog').close();pending=null});$('#discard-changes').addEventListener('click',()=>{$('#discard-dialog').close();if(pending)selectArticle(pending);pending=null});
 $('#new-article').addEventListener('click',()=>choose(fresh()));
-function renderPreview(){const a=collect();const body=bodyHTML(a.body);let img='';if(a.image&&(/^(\/images\/|\/uploads\/)/.test(a.image)||/^https:\/\//.test(a.image)))img=`<figure><img src="${escape(a.image)}" alt="${escape(a.credit)}"><figcaption>${escape(a.credit)}</figcaption></figure>`;$('.editor-preview').innerHTML=`<div class="eyebrow">${escape(a.category)}</div><h1>${escape(a.title||'Your headline')}</h1><p class="standfirst">${escape(a.subtitle)}</p><p class="meta">By ${escape(a.author||'ATHENA')}</p>${img}<div class="article-body">${body||'<p>Your article preview will appear here.</p>'}</div>`;}
+function renderPreview(){const a=collect();const body=bodyHTML(a.body);let img='';if(a.image&&(/^(\/images\/|\/uploads\/)/.test(a.image)||/^https:\/\//.test(a.image)))img=`<figure><img src="${escape(a.image)}" alt="${inline(a.credit)}"><figcaption>${inline(a.credit)}</figcaption></figure>`;$('.editor-preview').innerHTML=`<div class="eyebrow">${escape(a.category)}</div><h1>${escape(a.title||'Your headline')}</h1><p class="standfirst">${escape(a.subtitle)}</p><p class="meta">By ${escape(a.author||'ATHENA')}</p>${img}<div class="article-body">${body||'<p>Your article preview will appear here.</p>'}</div>`;}
 function tab(name){for(const n of ['write','preview']){const selected=n===name;$('#'+n+'-tab').setAttribute('aria-selected',String(selected));$('#'+n+'-tab').tabIndex=selected?0:-1;$('#'+n+'-panel').hidden=!selected}if(name==='preview')renderPreview()}
 for(const n of ['write','preview']){const t=$('#'+n+'-tab');t.addEventListener('click',()=>tab(n));t.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const next=e.key==='Home'?'write':e.key==='End'?'preview':n==='write'?'preview':'write';tab(next);$('#'+next+'-tab').focus()}})}
 form.addEventListener('input',e=>{if(fields.includes(e.target.name)){dirty=true;controls();message('')}});

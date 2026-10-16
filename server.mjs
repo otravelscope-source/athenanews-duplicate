@@ -7,7 +7,7 @@ import {randomUUID,createHash} from 'node:crypto';
 import {sitemapXML,newsSitemapXML,rssXML,sectionPath} from './seo.mjs';
 import {openDatabase,articleJSON} from './database.mjs';
 import {digest,token,verifyPassword,hashPassword} from './auth.mjs';
-import {home,articlePage,publisherPage,loginPage,studioPage,errorPage,setupPage,categories,esc} from './views.mjs';
+import {home,articlePage,publisherPage,photoCreditsPage,loginPage,studioPage,errorPage,setupPage,categories,esc} from './views.mjs';
 const root=dirname(fileURLToPath(import.meta.url));
 class HttpError extends Error{constructor(status,message){super(message);this.status=status}}
 export async function createApp(options={}){
@@ -60,6 +60,7 @@ export async function createApp(options={}){
  }
  if(path==='/'&&['GET','HEAD'].includes(req.method)){const section=categories.includes(url.searchParams.get('section'))?url.searchParams.get('section'):'All stories';if(section!=='All stories')return send(res,308,'','text/plain',{Location:sectionPath(section)});recordVisit(req,'/');return send(res,200,home(published(),section,siteUrl))}
  if(path.startsWith('/section/')&&['GET','HEAD'].includes(req.method)){const section=categories.find(c=>sectionPath(c)===path);if(!section)throw new HttpError(404,'News section not found.');recordVisit(req,path);return send(res,200,home(published(section),section,siteUrl))}
+ if(path==='/photo-credits'&&['GET','HEAD'].includes(req.method))return send(res,200,photoCreditsPage(published(),siteUrl));
  if(['/about','/contact'].includes(path)&&['GET','HEAD'].includes(req.method)){recordVisit(req,path);return send(res,200,publisherPage(path.slice(1),siteUrl))}
  if(path.startsWith('/article/')&&['GET','HEAD'].includes(req.method)){const id=decodeURIComponent(path.slice(9));const a=db.prepare("SELECT * FROM articles WHERE id=? AND status='published'").get(id);if(!a)throw new HttpError(404,'This story is not available.');recordVisit(req,path);const related=published().filter(r=>r.id!==a.id).sort((l,r)=>Number(r.category===a.category)-Number(l.category===a.category)).slice(0,3);return send(res,200,articlePage(a,siteUrl,related))}
  if(path==='/robots.txt'&&['GET','HEAD'].includes(req.method))return send(res,200,`User-agent: *\nAllow: /\nDisallow: /studio\nDisallow: /login\nDisallow: /account\nDisallow: /signin\nDisallow: /recover\nDisallow: /setup\nDisallow: /email/\nDisallow: /api/\nSitemap: ${siteUrl}/sitemap.xml\nSitemap: ${siteUrl}/news-sitemap.xml\n`,'text/plain; charset=utf-8');
