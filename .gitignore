@@ -3,3 +3,18 @@ data/
 backups/
 node_modules/
 *.zip
+
+# Independent copy: never publish private exports, credentials or generated files.
+.env.*
+!.env.example
+**/dist/
+**/.astro/
+**/private-export/
+**/media-needed.json
+**/sanity-preview.ndjson
+*.sqlite
+*.sqlite-*
+*.backup
+*.tar.gz
+
+node_modules

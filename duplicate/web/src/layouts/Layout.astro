@@ -1,0 +1,12 @@
+---
+import {layout} from '../legacy/views.mjs';
+import {siteOrigin} from '../lib/site.mjs';
+const {title,description,noindex=false,image,ogType='website',schema}=Astro.props;
+const origin=siteOrigin(import.meta.env.SITE_URL);
+const slot=await Astro.slots.render('default');
+const html=layout(`<main id="content" class="publisher-page">${slot}</main>`,{title,description,noindex,canonical:new URL(Astro.url.pathname,origin).href,imageUrl:image?new URL(image,origin).href:'',ogType,schema});
+---
+<Fragment set:html={html} />
+<style is:global>
+@import '../styles/migration.css';
+</style>

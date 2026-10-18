@@ -1,0 +1,11 @@
+---
+import { articles } from '../../lib/content';
+import { toLegacy } from '../../lib/legacy.mjs';
+import { articlePage } from '../../legacy/views.mjs';
+import { siteOrigin } from '../../lib/site.mjs';
+export async function getStaticPaths(){return (await articles()).map(article=>({params:{slug:article.slug.current},props:{article}}));}
+const {article}=Astro.props;
+const related=(await articles()).filter(a=>a.slug.current!==article.slug.current).sort((a,b)=>Number(b.category.slug.current===article.category.slug.current)-Number(a.category.slug.current===article.category.slug.current)).slice(0,3);
+const html=articlePage(toLegacy(article),siteOrigin(import.meta.env.SITE_URL),related.map(toLegacy));
+---
+<Fragment set:html={html} />

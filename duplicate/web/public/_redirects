@@ -1,0 +1,3 @@
+/signin /account 302
+/recover /account 302
+/rss.xml /feed.xml 301

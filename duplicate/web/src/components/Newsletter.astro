@@ -1,0 +1,10 @@
+---
+const raw = import.meta.env.PUBLIC_SUBSTACK_URL;
+const url = raw ? new URL(raw) : null;
+if (url && (url.protocol !== 'https:' || !url.hostname.endsWith('.substack.com') || url.username || url.password || url.port || url.pathname !== '/' || url.search || url.hash)) throw new Error('Use the HTTPS Substack publication origin');
+const publication = url?.origin;
+---
+{publication && <aside id="newsletter" class="newsletter-band" aria-label="Newsletter"><div class="newsletter-layout">
+  <div class="newsletter-copy"><p class="eyebrow">YOUR ATHENA</p><h2>A different perspective.<br />A place in your day.</h2><p>News and perspectives with women and children at the centre of the story. Subscribe to ATHENA on Substack.</p><p><a class="newsletter-link" href={`${publication}/subscribe`}>Open the newsletter signup page ↗</a></p></div>
+  <iframe class="newsletter-frame" src={`${publication}/embed`} title="Subscribe to the ATHENA newsletter" width="480" height="320" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div></aside>}

@@ -1,0 +1,20 @@
+{
+  "name": "athena-static-example",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.19.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/prepare.mjs && astro build && node scripts/check-dist.mjs",
+    "preview": "astro preview",
+    "test:editorial": "node scripts/test-editorial.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.8",
+    "@sanity/client": "8.9.0",
+    "@portabletext/to-html": "6.0.0",
+    "@supabase/supabase-js": "2.117.3"
+  }
+}

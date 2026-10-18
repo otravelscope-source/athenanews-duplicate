@@ -1,0 +1,11 @@
+# Copy to _headers after replacing BOTH provider origins. These are not secrets.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self' https://YOUR_PROJECT_REF.supabase.co; frame-src https://YOUR_PUBLICATION.substack.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests
+/account
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow
+/media/*
+  Cache-Control: public, max-age=31536000, immutable

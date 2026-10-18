@@ -1,0 +1,6 @@
+---
+import {publisherPage} from '../legacy/views.mjs';
+import {siteOrigin} from '../lib/site.mjs';
+const html=publisherPage('contact',siteOrigin(import.meta.env.SITE_URL));
+---
+<Fragment set:html={html} />

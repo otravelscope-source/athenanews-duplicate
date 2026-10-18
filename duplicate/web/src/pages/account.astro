@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+const emailEnabled = import.meta.env.PUBLIC_EMAIL_AUTH_ENABLED === 'true';
+const googleEnabled = import.meta.env.PUBLIC_GOOGLE_AUTH_ENABLED === 'true';
+---
+<Layout title="Reader account | ATHENA" noindex>
+  <div class="account-page">
+  <h1>Your ATHENA account</h1><p id="notice" role="status"></p>
+  <section id="signed-out"><p>Reader accounts and newsletter subscriptions are separate.</p>
+  {googleEnabled && <button id="google">Continue with Google</button>}
+  {emailEnabled && <form id="credentials"><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Password<input name="password" type="password" autocomplete="current-password" minlength="14" required></label><button value="signin">Sign in</button><button value="signup">Create account</button><button value="recover" formnovalidate>Reset password</button></form>}
+  {!emailEnabled && !googleEnabled && <p>Reader accounts will be available soon. You can subscribe to the newsletter below.</p>}
+  </section>
+  <section id="signed-in" hidden><p id="identity"></p><button id="logout">Sign out</button>
+    <h2>Your sections</h2><form id="preferences"><label>Sections, separated by commas<input name="sections" required></label><button>Save preferences</button></form>
+    <p id="history-count"></p><h2>Your news feed</h2><ul id="reader-feed"></ul>
+    <h2>Restore an existing ATHENA account</h2><p>After verifying your email, enter the recovery code saved from the old website to restore your preferences and reading history. If you do not have it, your new account can start afresh.</p>
+    <form id="claim"><label>Previous recovery code<input name="code" autocomplete="off" pattern="[a-f0-9]{64}" required></label><button>Restore my data</button></form>
+    {emailEnabled && <form id="password"><h2>Set a new password</h2><label>New password<input name="password" type="password" autocomplete="new-password" minlength="14" required></label><button>Save new password</button></form>}
+    <h2>Delete account</h2><p>This deletes your reader account, preferences and reading history. Manage your separate newsletter subscription in Substack.</p><button id="delete-account">Delete my reader account</button>
+  </section>
+  </div>
+</Layout>
+<script src="../scripts/account.ts"></script>

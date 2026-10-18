@@ -1,0 +1,8 @@
+---
+import {articles} from '../lib/content';
+import {toLegacy} from '../lib/legacy.mjs';
+import {photoCreditsPage} from '../legacy/views.mjs';
+import {siteOrigin} from '../lib/site.mjs';
+const html=photoCreditsPage((await articles()).map(toLegacy),siteOrigin(import.meta.env.SITE_URL));
+---
+<Fragment set:html={html} />

@@ -1,0 +1,8 @@
+---
+import { articles } from '../lib/content';
+import { toLegacy } from '../lib/legacy.mjs';
+import { home } from '../legacy/views.mjs';
+import { siteOrigin } from '../lib/site.mjs';
+const html=home((await articles()).map(toLegacy),'All stories',siteOrigin(import.meta.env.SITE_URL));
+---
+<Fragment set:html={html} />

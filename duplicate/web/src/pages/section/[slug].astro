@@ -1,0 +1,10 @@
+---
+import { articles } from '../../lib/content';
+import { toLegacy } from '../../lib/legacy.mjs';
+import { home } from '../../legacy/views.mjs';
+import { sections,siteOrigin } from '../../lib/site.mjs';
+export async function getStaticPaths(){const all=await articles();return sections(all).map(category=>({params:{slug:category.slug.current},props:{category,posts:all.filter(a=>a.category.slug.current===category.slug.current)}}));}
+const {category,posts}=Astro.props;
+const html=home(posts.map(toLegacy),category.title,siteOrigin(import.meta.env.SITE_URL));
+---
+<Fragment set:html={html} />

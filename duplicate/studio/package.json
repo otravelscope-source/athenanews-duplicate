@@ -1,0 +1,18 @@
+{
+  "name": "athena-newsroom",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=24.19.0" },
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "sanity": "6.19.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "styled-components": "6.6.0"
+  }
+}

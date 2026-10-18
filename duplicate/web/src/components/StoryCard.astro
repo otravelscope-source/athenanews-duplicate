@@ -1,0 +1,16 @@
+---
+import { articlePath, authorNames, formatDate, readingMinutes } from '../lib/site.mjs';
+import { plainText } from '../lib/article-format.mjs';
+const { article, heading = 'h3' } = Astro.props;
+const Heading = heading;
+---
+<article class="story-card">
+  <a class="card-cover" href={articlePath(article)} tabindex="-1" aria-hidden="true">
+    {article.mainImage?.localUrl ? <img src={article.mainImage.localUrl} alt="" width="800" height="500" loading="lazy" decoding="async" /> : <div class="type-cover">The Athena<br /><i>Perspective.</i></div>}
+  </a>
+  <p class="eyebrow">{article.category.title}{article.breaking && <span class="breaking"> / Breaking</span>}</p>
+  <Heading><a href={articlePath(article)}>{plainText(article.title)}</a></Heading>
+  <p>{plainText(article.subtitle)}</p>
+  <div class="meta"><span>{authorNames(article)}</span><span>{readingMinutes(article)} min read</span></div>
+  <time class="card-date" datetime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
+</article>

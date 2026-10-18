@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import { articles, plainText } from '../../lib/content';
+import { authors, authorSchema, siteOrigin } from '../../lib/site.mjs';
+export async function getStaticPaths(){
+  const all=await articles();
+  return authors(all).map(author=>({params:{slug:author.slug.current},props:{author,posts:all.filter(a=>a.authors.some((person:any)=>person.slug.current===author.slug.current))}}));
+}
+const {author,posts}=Astro.props;
+const schema={'@context':'https://schema.org','@type':'ProfilePage',mainEntity:authorSchema(author,siteOrigin(import.meta.env.SITE_URL))};
+---
+<Layout title={`${author.name} | ATHENA`} description={`Articles by ${author.name} for ATHENA.`} schema={schema}><section class="section-intro"><p class="eyebrow">OUR CONTRIBUTORS</p><h1>{author.name}</h1>{author.bio&&<p class="standfirst">{plainText(author.bio)}</p>}</section><section class="more"><div class="section-heading"><h2>Articles by {author.name}</h2><span>{posts.length} stories</span></div><div class="story-grid">{posts.map((article:any)=><StoryCard article={article}/>)}</div></section></Layout>
