@@ -54,7 +54,9 @@ export function articles():Promise<any[]>{
   if(source==='snapshot')rows=await snapshotArticles();
   else if(source==='sanity'){
    const client=createClient({projectId:import.meta.env.SANITY_PROJECT_ID,dataset:import.meta.env.SANITY_DATASET||'production',apiVersion:'2025-02-19',useCdn:false,perspective:'published'});
-   rows=await client.fetch('*[_type == "article" && defined(publishedAt) && dateTime(publishedAt) <= dateTime(now())] | order(publishedAt desc, updatedAt desc) {_id,legacyId,title,subtitle,slug,publishedAt,updatedAt,breaking,authors[]->{_id,name,slug,bio},category->{title,slug},mainImage{...,asset->{url}},body[]{..., _type == "image" => {asset->{url}}}}');
+   // Legacy stories can store a calendar date instead of a full ISO timestamp.
+   // Interpret those dates at midnight UTC without changing the original value.
+   rows=await client.fetch('*[_type == "article" && defined(publishedAt) && coalesce(dateTime(publishedAt), dateTime(publishedAt + "T00:00:00.000Z")) <= dateTime(now())] | order(publishedAt desc, updatedAt desc) {_id,legacyId,title,subtitle,slug,publishedAt,updatedAt,breaking,authors[]->{_id,name,slug,bio},category->{title,slug},mainImage{...,asset->{url}},body[]{..., _type == "image" => {asset->{url}}}}');
    for(const a of rows)for(const img of [a.mainImage,...(a.body||[]).filter((b:any)=>b._type==='image')].filter(Boolean))img.localUrl=img.asset?.url?await localImage(img.asset.url):preservedImage(img.originalUrl);
   }else throw new Error('CONTENT_SOURCE must be sanity or snapshot');
   if(!rows.length)throw new Error('No published articles: refusing an empty build');
