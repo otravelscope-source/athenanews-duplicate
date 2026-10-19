@@ -13,7 +13,7 @@ cd duplicate/web
 npm ci
 ```
 
-Copy the example environment file and fill in the target service settings. Never commit this file or any write token. `CONTENT_SOURCE=snapshot` builds the verified 45 published articles; `CONTENT_SOURCE=sanity` enables the new newsroom. Sanity mode refuses to silently fall back to stale snapshot content or publish an empty dataset.
+Copy the example environment file and fill in the target service settings. Never commit this file or any write token. `CONTENT_SOURCE=snapshot` builds the verified 46 published articles; `CONTENT_SOURCE=sanity` enables the new newsroom. Sanity mode refuses to silently fall back to stale snapshot content or publish an empty dataset.
 
 ```bash
 cp .env.example .env
@@ -56,3 +56,15 @@ node duplicate/scripts/import-sanity.mjs PRIVATE_EXPORT/articles.json PRIVATE_ME
 After authenticated import and Studio deployment, set `CONTENT_SOURCE=sanity` and `PUBLIC_SANITY_STUDIO_URL` in Pages. Create a Pages deploy hook for `duplicate/cloudflare`, then configure a Sanity webhook for published article, author, category and image changes. Store the hook URL only in Sanity. Builds take time; publishing is not instantaneous.
 
 All services must stay within their current free quotas. No architecture can guarantee unlimited capacity or permanently unchanged free-plan terms.
+
+## Deployed copy — 19 October 2026
+
+Public duplicate: https://athenawomensnews.pages.dev/
+
+The original Railway site also received the separately requested 19 October news article. No original hosting configuration or DNS was changed. The duplicate now contains 46 published articles, with the original routes, dates and public templates verified. Git pushes to `duplicate/cloudflare` rebuild the Pages website automatically.
+
+The independent Sanity Studio project is `athena-newsroom` on Cloudflare Pages. It builds from `duplicate/studio` with `npm run build && cp static/_headers dist/_headers`, output `dist`. Its public shell contains no write credentials. The exact Studio origin must be approved in Sanity CORS before authenticated editing can work.
+
+Supabase received the saved legacy reader and daily traffic records in private, RLS-protected tables. Passwords and sessions were not copied. Reader signup stays disabled until a real email delivery provider or approved OAuth provider is configured and tested. The connected Resend account currently has no verified sender domain.
+
+Sanity import is prepared and passes its dry run for 46 articles and 101 image references. Fourteen original Railway images have independent local copies; 87 existing external image addresses and their credits are preserved. Import awaits an authorized Sanity write credential. `CONTENT_SOURCE` remains `snapshot` until import validation and the Sanity-to-Pages webhook are complete. The duplicate remains excluded from search indexing during setup.
