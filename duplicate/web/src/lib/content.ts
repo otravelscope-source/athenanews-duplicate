@@ -9,6 +9,7 @@ export { plainText, creditHTML } from './article-format.mjs';
 const originalOrigin='https://athena-production-a95c.up.railway.app';
 const externalHosts=new Set(['www.house.mn.gov','commons.wikimedia.org','thumb.wikimedia.org','upload.wikimedia.org','api.nga.gov']);
 export function preservedImage(url:string):string {
+ if(!url)throw new Error('Image has no uploaded asset or external URL');
  const u=new URL(url,originalOrigin);
  if(u.username||u.password||u.protocol!=='https:')throw new Error('Invalid image URL');
  if(u.origin===originalOrigin){
@@ -57,7 +58,7 @@ export function articles():Promise<any[]>{
    // Legacy stories can store a calendar date instead of a full ISO timestamp.
    // Interpret those dates at midnight UTC without changing the original value.
    rows=await client.fetch('*[_type == "article" && defined(publishedAt) && coalesce(dateTime(publishedAt), dateTime(publishedAt + "T00:00:00.000Z")) <= dateTime(now())] | order(publishedAt desc, updatedAt desc) {_id,legacyId,title,subtitle,slug,publishedAt,updatedAt,breaking,authors[]->{_id,name,slug,bio},category->{title,slug},mainImage{...,asset->{url}},body[]{..., _type == "image" => {asset->{url}}}}');
-   for(const a of rows)for(const img of [a.mainImage,...(a.body||[]).filter((b:any)=>b._type==='image')].filter(Boolean))img.localUrl=img.asset?.url?await localImage(img.asset.url):preservedImage(img.originalUrl);
+   for(const a of rows)for(const img of [a.mainImage,...(a.body||[]).filter((b:any)=>b._type==='image')].filter(Boolean))img.localUrl=img.asset?.url?await localImage(img.asset.url):preservedImage(img.externalUrl||img.originalUrl);
   }else throw new Error('CONTENT_SOURCE must be sanity or snapshot');
   if(!rows.length)throw new Error('No published articles: refusing an empty build');
   const seen=new Set<string>();
