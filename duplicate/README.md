@@ -53,7 +53,21 @@ The import tool defaults to a dry run. It validates records and media mappings b
 node duplicate/scripts/import-sanity.mjs PRIVATE_EXPORT/articles.json PRIVATE_MEDIA_ROOT PRIVATE_MEDIA_MAP.json
 ```
 
-After authenticated import and Studio deployment, set `CONTENT_SOURCE=sanity` and `PUBLIC_SANITY_STUDIO_URL` in Pages. Create a Pages deploy hook for `duplicate/cloudflare`, then configure a Sanity webhook for published article, author, category and image changes. Store the hook URL only in Sanity. Builds take time; publishing is not instantaneous.
+Pages uses `CONTENT_SOURCE=sanity` and `PUBLIC_SANITY_STUDIO_URL=https://athena-newsroom.pages.dev`. The enabled Sanity webhook `Cloudflare Pages — ATHENA` calls the Pages deploy hook `Sanity published content` for the `duplicate/cloudflare` branch. Store the private hook URL only in Sanity; never add it to this repository, frontend environment variables or logs. Builds take time; publishing is not instantaneous.
+
+The webhook applies only to the `production` dataset, uses POST, and triggers on create, update and delete of published articles, authors and categories. Draft and version events are disabled. Uploading an image alone does not rebuild the website; publishing the article containing it does. The exact GROQ filter is:
+
+```groq
+_type in ["article", "author", "category"] && !(_id in path("drafts.**")) && !(_id in path("versions.**"))
+```
+
+The request contains only the document ID and type. Its projection is:
+
+```groq
+{_id, _type}
+```
+
+To investigate a missing update, inspect Sanity's webhook attempt log and the matching Cloudflare deployment. A successful delivery includes the Cloudflare deployment ID. Check the build result as well: an accepted webhook alone does not prove that the website was rebuilt. GitHub pushes continue to deploy independently.
 
 All services must stay within their current free quotas. No architecture can guarantee unlimited capacity or permanently unchanged free-plan terms.
 
@@ -71,4 +85,8 @@ Sanity import is complete: 46 published articles and 101 reviewed image referenc
 
 Pages now uses `CONTENT_SOURCE=sanity` and `PUBLIC_SANITY_STUDIO_URL=https://athena-newsroom.pages.dev`. The build supports both original calendar-only dates and full timestamps, with all 46 original article routes verified. Sanity images are copied into the static website during each build. No reader request needs the original Railway service.
 
-Automatic GitHub deployments work. The Sanity publishing webhook still needs a Cloudflare Pages deploy-hook URL; Cloudflare rejected dashboard sign-in in the current automation browser, and the connected API tool does not expose a deploy-hook creation endpoint. Until that hook is configured, a Sanity publication needs a manual Pages rebuild or a repository deployment. Reader login remains disabled pending a verified email sender or approved OAuth provider. The duplicate remains excluded from search indexing during setup.
+## Automatic publishing — 20 October 2026
+
+The deploy hook was created through the authenticated Cloudflare API, without dashboard sign-in or an additional API token. Sanity's enabled webhook targets that hook. An unchanged-content republication preserved the article's original date and received HTTP 200 from Cloudflare at 05:16 UTC; Cloudflare created deployment `144609d5-87da-4f13-8902-f882d4173663` with trigger type `deploy_hook`. That deployment completed successfully at 05:16:40 UTC. Draft edits did not start deployments.
+
+Reader login remains disabled pending a verified email sender or approved OAuth provider. The duplicate remains excluded from search indexing during setup. The original Railway publishing and hosting configuration are unchanged.
