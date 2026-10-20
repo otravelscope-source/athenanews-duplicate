@@ -14,3 +14,6 @@
 
 
 .photo-credits figure{margin:1.5rem 0}.photo-credits img{max-width:100%;width:320px;max-height:240px;object-fit:contain}.photo-credits figcaption{overflow-wrap:anywhere;white-space:pre-line}.photo-credits section{margin-top:3rem}
+
+/* Native Substack signup on the homepage and below articles. */
+.newsletter-panel{display:flex;gap:32px;align-items:center;flex-wrap:wrap}.newsletter-panel>div{flex:1 1 280px}.newsletter-embed{flex:0 1 480px;width:100%;max-width:100%;height:320px;border:0;background:#fff}.newsletter-panel .black-button{margin-top:16px}@media(max-width:640px){.newsletter-panel{padding:24px 18px}.newsletter-embed{flex-basis:100%}}
