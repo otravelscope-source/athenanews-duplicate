@@ -89,4 +89,18 @@ Pages now uses `CONTENT_SOURCE=sanity` and `PUBLIC_SANITY_STUDIO_URL=https://ath
 
 The deploy hook was created through the authenticated Cloudflare API, without dashboard sign-in or an additional API token. Sanity's enabled webhook targets that hook. An unchanged-content republication preserved the article's original date and received HTTP 200 from Cloudflare at 05:16 UTC; Cloudflare created deployment `144609d5-87da-4f13-8902-f882d4173663` with trigger type `deploy_hook`. That deployment completed successfully at 05:16:40 UTC. Draft edits did not start deployments.
 
-Reader login remains disabled pending a verified email sender or approved OAuth provider. The duplicate remains excluded from search indexing during setup. The original Railway publishing and hosting configuration are unchanged.
+Reader login remains disabled pending a verified email sender or approved OAuth provider. The duplicate was excluded from search indexing during initial setup; the current search status is recorded below. The original Railway publishing and hosting configuration are unchanged.
+
+## Publishing and search visibility — 21 October 2026
+
+The 20 October story, “Trump orders a new women’s-health division. Funding will determine what it can deliver.”, is live at `/article/trump-womens-health-division-funding/`. Its original publication timestamp is preserved. The article has no body links and uses a credited, contextual NIH archive photograph. Publishing it in Sanity automatically produced successful Pages deployment `dde47c29-d0f1-4e17-b1f4-59387ea45aac`. The live build contains 47 articles.
+
+Production `SITE_NOINDEX=false` now permits crawling. Public pages have index/follow metadata; account pages retain noindex. The live sitemap index, full sitemap, recent-news sitemap and robots.txt were checked. The new story appears in the article and news sitemaps. Navigation advertises `/rss.xml`, which redirects to the existing `/feed.xml` for compatibility; the feed contains all 47 articles.
+
+Google's HTML verification tag is deployed through `GOOGLE_SITE_VERIFICATION`. The new URL-prefix property was added, but ownership verification and sitemap submission are still pending: Search Console sign-in returned a 400 error in the cloud browser. The original Railway property was not changed.
+
+Bing ownership verification succeeded on 21 October using `web/public/BingSiteAuth.xml`; retain that file. The verified dashboard is accessible. Submitting `https://athenawomensnews.pages.dev/sitemap-index.xml` returned “An unexpected error occurred on the server side” twice, including one retry after checking that no sitemap was stored. Sitemap submission is therefore not complete. The same sitemap is advertised in robots.txt for crawler discovery. Verification and sitemap availability do not guarantee indexing.
+
+The newsletter panels now embed the native form for the confirmed publication `https://athenawomennews.substack.com`, with a direct signup link. Both the embedded and direct signup pages displayed “Site Unavailable” in this cloud browser, so subscription storage and email delivery have not passed an end-to-end test. No test email was submitted or newsletter sent. A Substack embed alone does not send a newsletter when an article is published in Sanity; newsletter publication remains a separate workflow.
+
+Reader authentication remains disabled pending its provider setup and end-to-end checks. No Railway content or configuration was changed during these 20–21 October publishing and SEO updates.
