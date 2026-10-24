@@ -81,11 +81,31 @@
     }
   ],
   "image": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Naberezhna_St%2C_2%2C_Oleshky%2C_Khersons%27ka_oblast%2C_Ukraine%2C_75100_-_panoramio.jpg",
-    "alt": "Archive view of the Dnipro waterfront at Oleshky, Ukraine",
-    "caption": "Archive photograph: the Dnipro waterfront in Oleshky on 11 August 2012, before Russia’s full-scale invasion. It does not show the 2026 ceasefire or evacuation preparations.",
-    "credit": "7777777kz / Wikimedia Commons",
-    "license": "CC BY 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naberezhna_St,_2,_Oleshky,_Khersons%27ka_oblast,_Ukraine,_75100_-_panoramio.jpg"
-  }
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0_%D0%9E%D0%BB%D0%B5%D1%88%D0%BA%D1%96%D0%B2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0_%D0%9E%D0%BB%D0%B5%D1%88%D0%BA%D1%96%D0%B2.jpg",
+    "alt": "Oleshky central square with trees and public buildings before the war",
+    "caption": "Oleshky’s central square on 14 August 2007. Archive photograph showing the city before the current war; it does not depict the announced ceasefire.",
+    "credit": "Gottinight; colour and horizon adjustments by Bogomolov.PL / Wikimedia Commons",
+    "license": "CC BY-SA 3.0"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Dmytro_Lubinets_Ombudsman.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dmytro_Lubinets_Ombudsman.jpg",
+      "alt": "Portrait of Ukrainian human rights ombudsman Dmytro Lubinets",
+      "caption": "Dmytro Lubinets, who described the planned humanitarian operation, photographed on 22 July 2022. Archive portrait.",
+      "credit": "DvoretskaO / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "afterParagraph": 7
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kherson_after_flooding%2C_2023-06-08_%2801%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kherson_after_flooding,_2023-06-08_(01).jpg",
+      "alt": "Emergency service vehicle in floodwater on Korabelna Square in Kherson",
+      "caption": "A Ukrainian emergency-service vehicle in Kherson on 8 June 2023, following the Kakhovka dam disaster. Contextual archive photograph from the opposite bank of the Dnipro, not the planned Oleshky operation.",
+      "credit": "Ministry of Internal Affairs of Ukraine (Mvs.gov.ua) / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "afterParagraph": 12
+    }
+  ]
 }
