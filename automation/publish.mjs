@@ -89,9 +89,27 @@ export async function main() {
     await summary(`Sanity authentication and draft-write check passed. ${existing.length} article records found. No public article changed.`);
     return;
   }
+  if(process.argv.includes('--refresh-oleshky-images')) {
+    const item=validate(JSON.parse(await readFile('automation/queue/libfile_37fcd140f5288191b9b013dec1d2621d.json','utf8')));
+    const id='article-libfile-37fcd140f5288191b9b013dec1d2621d';
+    const {result:current}=await request('/query/production?query='+encodeURIComponent('*[_id == "'+id+'"][0]'));
+    assert(current && current.slug.current===item.slug, 'Target article mismatch');
+    if(current.automationImageRevision !== 1) {
+      const blocks=current.body.filter(b=>b._type==='block');
+      assert(JSON.stringify(blocks.map(b=>({style:b.style,text:b.children.map(c=>c.text).join('')})))===JSON.stringify(item.paragraphs), 'Article text changed: hold image update for review');
+      for(const picture of [item.image,...item.inlineImages]) {
+        const response=await fetch(picture.url,{method:'HEAD',signal:AbortSignal.timeout(30000)});
+        assert(response.ok && (response.headers.get('content-type')||'').startsWith('image/'), 'Image unavailable');
+      }
+      const body=blocks.flatMap((b,n)=>[b,...item.inlineImages.filter(i=>i.afterParagraph===n).map((i,j)=>({...imageDocument(i),_key:'image'+n+'-'+j}))]);
+      await request('/mutate/production?visibility=sync',{mutations:[{patch:{id,ifRevisionID:current._rev,set:{mainImage:imageDocument(item.image),body,automationImageRevision:1}}}]});
+    }
+    await summary('Verified image update: '+await verifyPage(item));
+    return;
+  }
   const items=[], held=[];
   for(const file of (await readdir('automation/queue')).filter(f=>f.endsWith('.json'))) {
-    try {items.push(validate(JSON.parse(await readFile('automation/queue/'+file,'utf8'))));}
+    try {const item=JSON.parse(await readFile('automation/queue/'+file,'utf8')); if(existing.some(e=>e.sourceLibraryId===item.sourceLibraryId || e.slug===item.slug || norm(e.title||'')===norm(item.title||''))) continue; items.push(validate(item));}
     catch(e){held.push(`${file}: ${e.message}`);}
   }
   if(held.length) await summary('Held articles:\n'+held.join('\n'));
