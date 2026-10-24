@@ -1,0 +1,28 @@
+name: ATHENA publishing
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['automation/**', '.github/workflows/athena-publish.yml']
+permissions:
+  contents: read
+concurrency:
+  group: athena-sanity-publisher
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate publisher safety checks
+        run: node --test automation/publish.test.mjs
+      - name: Verify publishing credential without publishing
+        env:
+          SANITY_WRITE_TOKEN: ${{ secrets.SANITY_WRITE_TOKEN }}
+        run: node automation/publish.mjs --check
