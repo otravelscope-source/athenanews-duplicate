@@ -23,12 +23,16 @@ export function validate(item, now = new Date()) {
   const prose = item.paragraphs.map(p=>p.text).join('\n');
   assert(prose.length >= 600 && prose.trim().endsWith('The Athena Perspective.'), 'Incomplete article');
   assert(!/\b(TODO|lorem ipsum|insert quote|placeholder)\b/i.test(prose), 'Unfinished copy');
-  const image = item.image;
+  const images = [item.image, ...(item.inlineImages || [])];
+  assert(images.length >= 3 && images.length <= 6 && new Set(images.map(i=>i.url)).size === images.length, "Use 3–6 distinct reviewed images");
+  for (const image of images) {
   assert(image && clean(image.alt) && image.alt && clean(image.caption) && image.caption && clean(image.credit) && image.credit && image.license, 'Incomplete image metadata');
   const url = new URL(image.url), source = new URL(image.sourceUrl);
   assert(url.protocol === 'https:' && url.hostname === 'upload.wikimedia.org' && !url.search && !url.hash && !url.username && !url.password && /\.(jpe?g|png|webp)$/i.test(url.pathname), 'Image must use reviewed Wikimedia original');
   assert(source.protocol === 'https:' && source.hostname === 'commons.wikimedia.org' && !source.username && !source.password, 'Missing Commons licence source');
   assert(['Public domain','CC0','CC BY 4.0','CC BY-SA 4.0','CC BY 3.0','CC BY-SA 3.0','CC BY-SA 2.0'].includes(image.license), 'Unreviewed image licence');
+  }
+  assert((item.inlineImages || []).every(i=>Number.isInteger(i.afterParagraph) && i.afterParagraph >= 0 && i.afterParagraph < item.paragraphs.length - 1), "Invalid image placement");
   return item;
 }
 
@@ -47,6 +51,8 @@ async function request(path, body) {
   return response.json();
 }
 const hash = s => createHash('sha256').update(s).digest('hex').slice(0,24);
+const licenceUrl = name => ({'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY 3.0':'https://creativecommons.org/licenses/by/3.0/','CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/','Public domain':'https://creativecommons.org/publicdomain/mark/1.0/'})[name];
+const imageDocument = image => ({_type:'image',externalUrl:image.url,alt:image.alt,caption:image.caption,credit:`${image.credit}. ${image.license}.`,sourceUrl:image.sourceUrl,legacyCredit:`${image.caption} ${image.credit}. ${image.license}. Source: ${image.sourceUrl} Licence: ${licenceUrl(image.license)}`});
 export function documents(item) {
   const author = 'author-' + hash(item.author.trim());
   return [
@@ -54,8 +60,8 @@ export function documents(item) {
     {_id:'category-'+item.category.toLowerCase(),_type:'category',title:item.category,slug:{_type:'slug',current:item.category.toLowerCase()}},
     {_id:'article-'+item.sourceLibraryId.replaceAll('_','-'),_type:'article',sourceLibraryId:item.sourceLibraryId,topicKey:item.topicKey,title:item.title,subtitle:item.subtitle || '',slug:{_type:'slug',current:item.slug},publishedAt:item.publishedAt,breaking:false,
       authors:[{_type:'reference',_ref:author,_key:'author0'}],category:{_type:'reference',_ref:'category-'+item.category.toLowerCase()},
-      mainImage:{_type:'image',externalUrl:item.image.url,alt:item.image.alt,caption:item.image.caption,credit:`${item.image.credit}. ${item.image.license}.`,sourceUrl:item.image.sourceUrl},
-      body:item.paragraphs.map((p,n)=>({_type:'block',_key:'b'+n,style:p.style,markDefs:[],children:[{_type:'span',_key:'s'+n,text:p.text,marks:[]}]}))}
+      mainImage:imageDocument(item.image),
+      body:item.paragraphs.flatMap((p,n)=>[{_type:'block',_key:'b'+n,style:p.style,markDefs:[],children:[{_type:'span',_key:'s'+n,text:p.text,marks:[]}]},...(item.inlineImages || []).filter(i=>i.afterParagraph===n).map((i,j)=>({...imageDocument(i),_key:'image'+n+'-'+j}))])}
   ];
 }
 async function summary(text) {
@@ -68,7 +74,7 @@ async function verifyPage(item) {
     const response = await fetch(url,{signal:AbortSignal.timeout(20000)}).catch(()=>null);
     if(response?.ok) {
       const html=await response.text();
-      if(html.includes('The Athena Perspective') && html.includes(item.image.url.replaceAll('&','&amp;'))) return url;
+      if(html.includes('The Athena Perspective') && [item.image,...(item.inlineImages || [])].every(i=>html.includes(i.url.replaceAll('&','&amp;')))) return url;
     }
     await new Promise(resolve=>setTimeout(resolve,20000));
   }
@@ -91,8 +97,10 @@ export async function main() {
   if(held.length) await summary('Held articles:\n'+held.join('\n'));
   const selected = select(items,existing);
   for(const item of selected) {
-    const image = await fetch(item.image.url,{method:'HEAD',signal:AbortSignal.timeout(30000)});
-    assert(image.ok && (image.headers.get('content-type') || '').startsWith('image/'), 'Image unavailable: '+item.slug);
+    for(const picture of [item.image,...(item.inlineImages || [])]) {
+      const image = await fetch(picture.url,{method:'HEAD',signal:AbortSignal.timeout(30000)});
+      assert(image.ok && (image.headers.get('content-type') || '').startsWith('image/'), 'Image unavailable: '+item.slug);
+    }
     await request('/mutate/production?visibility=sync',{mutations:documents(item).map(doc=>({createIfNotExists:doc}))});
     await summary('CMS saved: '+item.slug);
     await summary('Verified live: '+await verifyPage(item));
