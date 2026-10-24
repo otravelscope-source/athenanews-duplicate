@@ -38,9 +38,3 @@ jobs:
         env:
           SANITY_WRITE_TOKEN: ${{ secrets.SANITY_WRITE_TOKEN }}
         run: node automation/publish.mjs
-
-      - name: Apply requested Oleshky image update
-        if: ${{ github.event_name == 'push' }}
-        env:
-          SANITY_WRITE_TOKEN: ${{ secrets.SANITY_WRITE_TOKEN }}
-        run: node automation/publish.mjs --refresh-oleshky-images
