@@ -1,18 +1,25 @@
 name: ATHENA publishing
 on:
   workflow_dispatch:
+    inputs:
+      check_only:
+        description: Check authentication without publishing
+        type: boolean
+        default: true
   push:
     branches: [main]
     paths: ['automation/**', '.github/workflows/athena-publish.yml']
+  schedule:
+    - cron: '0 6,12,18 * * *'
 permissions:
   contents: read
 concurrency:
   group: athena-sanity-publisher
   cancel-in-progress: false
 jobs:
-  check:
+  publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,7 +29,12 @@ jobs:
           node-version: '22'
       - name: Validate publisher safety checks
         run: node --test automation/publish.test.mjs
-      - name: Verify publishing credential without publishing
+      - name: Verify publishing credential
         env:
           SANITY_WRITE_TOKEN: ${{ secrets.SANITY_WRITE_TOKEN }}
         run: node automation/publish.mjs --check
+      - name: Publish reviewed queue and verify live pages
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.check_only }}
+        env:
+          SANITY_WRITE_TOKEN: ${{ secrets.SANITY_WRITE_TOKEN }}
+        run: node automation/publish.mjs
