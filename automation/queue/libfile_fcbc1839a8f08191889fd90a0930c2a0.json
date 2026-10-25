@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_fcbc1839a8f08191889fd90a0930c2a0",
+  "topicKey": "paula-moltzan-first-world-cup-win-2026-10-24",
+  "slug": "paula-moltzan-first-world-cup-win-solden-2026",
+  "title": "Paula Moltzan wins her first World Cup race at 32—by one hundredth of a second",
+  "subtitle": "The American’s 149th World Cup start brought her first victory. Her Sölden breakthrough followed ten podium finishes and came in her first race on a new ski brand.",
+  "author": "ATHENA",
+  "category": "World",
+  "publishedAt": "2026-10-25T06:00:00Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "Paula Moltzan won her first Alpine skiing World Cup race on 24 October, taking the season-opening giant slalom in Sölden, Austria, by just 0.01 seconds over Albania’s Lara Colturi."
+    },
+    {
+      "style": "normal",
+      "text": "At 32, the American became the oldest woman to claim a first Alpine World Cup victory, according to US Ski & Snowboard. It came on her 149th World Cup start, FIS reported, after ten previous podium finishes."
+    },
+    {
+      "style": "normal",
+      "text": "Germany’s Emma Aicher finished third. Mikaela Shiffrin, who led after the opening run, placed seventh as changing weather complicated the second descent."
+    },
+    {
+      "style": "normal",
+      "text": "For Moltzan, the result was a new achievement within an already accomplished career. US Ski & Snowboard noted that she had Olympic bronze and world championship gold and bronze medals before this first World Cup win. She had also finished second on the same Sölden hill in 2025."
+    },
+    {
+      "style": "h2",
+      "text": "Two runs, one narrow margin"
+    },
+    {
+      "style": "normal",
+      "text": "Moltzan began the second run in fifth place, 0.59 seconds behind Shiffrin. Clouds and snow moved in, reducing the light as the race progressed, the US team reported."
+    },
+    {
+      "style": "normal",
+      "text": "Her fifth-fastest second run was enough to produce the winning combined time. The distinction matters: giant slalom rewards the total across both descents, so winning does not require the fastest performance on either individual run."
+    },
+    {
+      "style": "normal",
+      "text": "FIS reported that Moltzan attacked the steep section before losing some of her advantage lower down. Her lead nevertheless survived the remaining competitors. Colturi had moved up from sixth after the first run and missed her own first World Cup victory by the smallest recorded margin separating them."
+    },
+    {
+      "style": "normal",
+      "text": "Aicher’s third place was also a milestone: her first World Cup podium in giant slalom. The opening race therefore delivered breakthroughs across the podium, rather than simply a change in the winner’s name."
+    },
+    {
+      "style": "h2",
+      "text": "A new equipment partnership, an established contender"
+    },
+    {
+      "style": "normal",
+      "text": "Moltzan’s victory came in her first World Cup appearance on Van Deer skis. Reuters reported that she became the first woman to win using the brand founded by retired Austrian champion Marcel Hirscher."
+    },
+    {
+      "style": "normal",
+      "text": "The result gives that commercial partnership an immediate success. It does not establish how much the equipment contributed: a single race cannot separate skis from preparation, execution and changing conditions."
+    },
+    {
+      "style": "normal",
+      "text": "Moltzan credited the work behind the performance. Speaking to US Ski & Snowboard, she said: “I'm really proud, and I'm proud of the work that my team and I did this summer.”"
+    },
+    {
+      "style": "normal",
+      "text": "Her age makes the victory notable, but the record preceding it explains why it should not be treated as an arrival from nowhere. Ten podiums had already established her ability to challenge the leaders. In Sölden, the difference was one hundredth of a second—and, finally, the top step."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Paula_Moltzan_in_Soldeu_2024_%284%29.jpg",
+    "alt": "Paula Moltzan at Soldeu in 2024.",
+    "caption": "Archive: Paula Moltzan at Soldeu, Andorra, on 11 February 2024, after finishing third in the slalom.",
+    "credit": "Tournasol7 / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paula_Moltzan_in_Soldeu_2024_%284%29.jpg"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Paula_Moltzan_Grandvalira_2023_GS_1st_run_%281%29.jpg",
+      "alt": "Paula Moltzan racing giant slalom in 2023.",
+      "caption": "Archive: Moltzan races giant slalom at Soldeu on 19 March 2023.",
+      "credit": "Krzysztof Golik / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paula_Moltzan_Grandvalira_2023_GS_1st_run_%281%29.jpg",
+      "afterParagraph": 6
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Lara_Colturi_in_Soldeu_2024_GS_2nd_run_%286%29.jpg",
+      "alt": "Lara Colturi racing at Soldeu in 2024.",
+      "caption": "Archive: Lara Colturi during the giant slalom at Soldeu on 10 February 2024.",
+      "credit": "Tournasol7 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lara_Colturi_in_Soldeu_2024_GS_2nd_run_%286%29.jpg",
+      "afterParagraph": 11
+    }
+  ]
+}
