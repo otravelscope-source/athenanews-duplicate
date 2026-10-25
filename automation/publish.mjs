@@ -80,6 +80,18 @@ async function verifyPage(item) {
   }
   throw new Error(`CMS saved but public page verification timed out: ${url}`);
 }
+
+export async function checkImage(url, fetcher = fetch) {
+  const headers = {'User-Agent':'ATHENA-Publisher/1.0 (https://athenawomensnews.pages.dev/)'};
+  let response = await fetcher(url,{method:'HEAD',headers,signal:AbortSignal.timeout(30000)}).catch(()=>null);
+  if(response?.ok && (response.headers.get('content-type') || '').startsWith('image/')) return;
+  response = await fetcher(url,{headers,signal:AbortSignal.timeout(30000)});
+  assert(response.ok && (response.headers.get('content-type') || '').startsWith('image/'), 'Image unavailable: HTTP '+response.status);
+  const reader=response.body.getReader();
+  try { const chunk=await reader.read(); assert(!chunk.done && chunk.value.length>0,'Empty image response'); }
+  finally { await reader.cancel(); }
+}
+
 export async function main() {
   const check = process.argv.includes('--check');
   const query = '*[_type == "article"]{_id,title,"slug":slug.current,sourceLibraryId,topicKey}';
@@ -115,13 +127,14 @@ export async function main() {
   if(held.length) await summary('Held articles:\n'+held.join('\n'));
   const selected = select(items,existing);
   for(const item of selected) {
+    try {
     for(const picture of [item.image,...(item.inlineImages || [])]) {
-      const image = await fetch(picture.url,{method:'HEAD',signal:AbortSignal.timeout(30000)});
-      assert(image.ok && (image.headers.get('content-type') || '').startsWith('image/'), 'Image unavailable: '+item.slug);
+      await checkImage(picture.url);
     }
     await request('/mutate/production?visibility=sync',{mutations:documents(item).map(doc=>({createIfNotExists:doc}))});
     await summary('CMS saved: '+item.slug);
     await summary('Verified live: '+await verifyPage(item));
+    } catch(e) { held.push(item.slug+': '+e.message); await summary('Held: '+item.slug+': '+e.message); }
   }
   if(!selected.length) await summary('No eligible unpublished articles in the queue. No content changed.');
   if(held.length) process.exitCode=1;
