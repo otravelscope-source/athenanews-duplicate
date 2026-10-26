@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_db411dff27f08191bbf9da90469c2d74",
+  "topicKey": "nepal-august-2026-flood-child-mental-health-support",
+  "slug": "nepal-flood-recovery-17000-children-mental-health-support",
+  "title": "Nepal’s flood recovery must reach 17,000 children needing psychological support, UNICEF warns",
+  "subtitle": "Three weeks after the disaster, a new assessment puts mental-health care and family reunification alongside the rebuilding of homes and schools.",
+  "author": "ATHENA",
+  "category": "Children",
+  "publishedAt": "2026-09-16T00:00:00Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "An estimated 17,000 children affected by Nepal’s floods need mental-health and psychosocial support, UNICEF said on 15 September, warning that recovery must address grief, fear and family separation as well as physical destruction."
+    },
+    {
+      "style": "normal",
+      "text": "The agency also identified 541 unaccompanied or separated children needing protection. Those categories do not mean every child has lost both parents. UNICEF says it is working with authorities on tracing and reunification; 18 children have been reunited with their families."
+    },
+    {
+      "style": "h2",
+      "text": "Care for children—and the adults helping them"
+    },
+    {
+      "style": "normal",
+      "text": "The floods struck on 26 August. In an account published by UNICEF USA on 8 September, Sushila Paneru, a local-government psychosocial counsellor in Bidur municipality, described survivors struggling with sleep, appetite and fear. She had herself escaped rising water at her workplace."
+    },
+    {
+      "style": "normal",
+      "text": "Her experience makes visible an often-overlooked part of disaster response: the people providing care may also be survivors. The account describes group sessions where children and caregivers can share experiences without pressure, alongside individual counselling. It is UNICEF’s reporting, not an ATHENA interview or an independent evaluation of the programme."
+    },
+    {
+      "style": "normal",
+      "text": "UNICEF’s latest update reports 18 child-friendly spaces, 13 supported by the agency, offering play, learning and support. Its estimate of need is not a count of diagnosed psychiatric disorders. The release does not explain how the estimate was calculated or provide a breakdown by age or sex, limiting conclusions about which groups face the greatest unmet need."
+    },
+    {
+      "style": "h2",
+      "text": "Getting supplies in is only part of recovery"
+    },
+    {
+      "style": "normal",
+      "text": "Access remains a practical constraint. Reuters reported on 9 September that Nepal’s army was using drones to deliver essentials where roads and bridges had been destroyed and helicopters were occupied with rescue operations."
+    },
+    {
+      "style": "normal",
+      "text": "An EU-supported flight delivered 84 metric tonnes of humanitarian supplies to Kathmandu on 4 September, including water-treatment materials, medical supplies and learning materials, according to UNICEF. The agency said trucks were taking relief to affected districts. Arrival at an airport, however, is not evidence that every family has received assistance."
+    },
+    {
+      "style": "normal",
+      "text": "The accountability questions now extend beyond cargo totals: which children can reach qualified support, how quickly separated families are reunited, and whether services continue after temporary shelters close. Women working as counsellors, teachers and caregivers should be recognised as participants in recovery—not treated as an unlimited substitute for funded services."
+    },
+    {
+      "style": "normal",
+      "text": "For children, rebuilding must mean more than returning to a repaired classroom. It must also mean having a trusted adult and an accessible service when fear follows them inside."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Delivering_Relief-_374th_Airlift_Wing_Provides_Lifesaving_aid_in_Nepal_%289906583%29.jpg",
+    "alt": "A C-130J military transport aircraft parked at Tribhuvan International Airport in Kathmandu after delivering flood-relief supplies",
+    "caption": "A C-130J at Tribhuvan International Airport after delivering relief supplies to Nepal, 2 September 2026. Documentary photograph from the flood response.",
+    "credit": "Senior Airman Cayla Hunt / U.S. Air Force / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delivering_Relief-_374th_Airlift_Wing_Provides_Lifesaving_aid_in_Nepal_(9906583).jpg"
+  },
+  "inlineImages": [
+    {
+      "afterParagraph": 4,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Delivering_Relief-_374th_Airlift_Wing_Provides_Lifesaving_aid_in_Nepal_%289908116%29.jpg",
+      "alt": "A member of Nepal’s armed forces coordinates relief operations beside a transport aircraft in Kathmandu",
+      "caption": "A member of the Nepali Armed Forces coordinates relief operations at Tribhuvan International Airport, 2 September 2026. Documentary photograph from the flood response.",
+      "credit": "Senior Airman Cayla Hunt / U.S. Air Force / Wikimedia Commons",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delivering_Relief-_374th_Airlift_Wing_Provides_Lifesaving_aid_in_Nepal_(9908116).jpg"
+    },
+    {
+      "afterParagraph": 8,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Joint_service_members_load_cargo_for_Nepal_lifesaving_operations_%289908043%29.jpg",
+      "alt": "Service members load a skid-steer onto a C-130J aircraft for relief operations in Nepal",
+      "caption": "Service members load equipment at Kadena Air Base, Japan, for relief operations in Nepal, 1 September 2026. Documentary photograph showing the supply chain behind the response.",
+      "credit": "Senior Airman Cayla Hunt / U.S. Air Force / Wikimedia Commons",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joint_service_members_load_cargo_for_Nepal_lifesaving_operations_(9908043).jpg"
+    }
+  ]
+}
