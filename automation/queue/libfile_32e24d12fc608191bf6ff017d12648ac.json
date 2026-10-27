@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_32e24d12fc608191bf6ff017d12648ac",
+  "topicKey": "congo-ebola-care-trust-maternity-2026-10-26",
+  "slug": "congo-ebola-care-families-hospital-trust-2026",
+  "title": "When fear keeps families from Ebola care, hospitals must earn their trust",
+  "subtitle": "A mother’s account from Congo shows how rumours can delay treatment. Protecting families also means keeping maternity wards open, making hospitals safer and defending the workers who provide care.",
+  "author": "ATHENA",
+  "category": "Health",
+  "publishedAt": "2026-10-27T06:00:00Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A mother in eastern Democratic Republic of the Congo delayed taking her sick six-year-old to hospital because she had heard that treatment centres harmed patients, according to testimony published by the World Health Organization on 26 October. By the time he reached a health facility, he was critically ill. He died two days later."
+    },
+    {
+      "style": "normal",
+      "text": "WHO identifies the mother as Jeanne and describes her child as having suspected Ebola symptoms. Its account does not supply a laboratory-confirmed diagnosis or establish that earlier admission would have saved him. What it documents is her explanation of a decision made in fear—and her wish to help other parents seek care sooner."
+    },
+    {
+      "style": "normal",
+      "text": "That distinction matters in an outbreak where families need reliable information without being blamed for every barrier between home and treatment. WHO social-listening analyst Salif Diarra cautioned against treating the mother’s experience as an individual failure: she was trying to protect her child."
+    },
+    {
+      "style": "h2",
+      "text": "Fear reaches beyond Ebola wards"
+    },
+    {
+      "style": "normal",
+      "text": "The consequences extend to people who need care for entirely different reasons. At Lita General Reference Hospital in Ituri, WHO reported on 22 October that maternity deliveries had fallen from an average of 80 a month before the outbreak to 42 in June. By September, the number had recovered to 56, still below its earlier level."
+    },
+    {
+      "style": "normal",
+      "text": "Those are figures from one hospital, not a measure of all births in the area. They do not establish where the women who stayed away gave birth or what happened to them. They nevertheless identify an essential service losing patients during a health emergency."
+    },
+    {
+      "style": "normal",
+      "text": "The hospital’s difficulties were practical as well as reputational. WHO described inadequate beds, deteriorated infrastructure and no functioning laboratory when the outbreak struck. Its response included tents and 29 beds and mattresses for maternity and paediatrics, alongside equipment and ambulances. A borehole and reorganised patient routes were intended to improve infection prevention."
+    },
+    {
+      "style": "normal",
+      "text": "In Isiro, another hospital faced a similar disruption. Director David Kamalu told WHO that bed occupancy fell from above 90% before the crisis to 30% in August, as Ebola patients were accommodated within hospital buildings. The paediatric ward had to move."
+    },
+    {
+      "style": "normal",
+      "text": "WHO’s 23 October account describes an expanded, 50-bed Ebola treatment centre and patients beginning to return for other services. These are reports from institutions involved in the response, rather than an independent assessment of every patient’s access or safety."
+    },
+    {
+      "style": "h2",
+      "text": "Care depends on protecting its workers"
+    },
+    {
+      "style": "normal",
+      "text": "Congo’s history of Ebola response reaches back decades, but experience alone cannot protect a treatment team. On 26 October, Reuters reported that an experienced nurse had been killed and a colleague injured in Bafwasende, in Tshopo province. Officials and a memo reviewed by the agency said attackers accused the pair of spreading the disease through contaminated water."
+    },
+    {
+      "style": "normal",
+      "text": "A local official told Reuters that frightened health workers were sheltering at the general hospital under police guard. The accusations against the workers were allegations made by their attackers, not evidence of how the outbreak spread."
+    },
+    {
+      "style": "normal",
+      "text": "For families, the loss of an outreach worker can also mean losing someone who explains symptoms, answers questions and helps connect a household to treatment. Protecting staff and building public confidence are therefore part of the same task: keeping care available."
+    },
+    {
+      "style": "normal",
+      "text": "WHO’s outbreak update published on 23 October recorded 9,704 confirmed cases and 4,687 deaths in Congo as of 20 October. Of 482 deaths added since its previous update, 307 occurred in communities rather than treatment centres. Those figures describe reported cases at a defined date; they cannot show how many deaths were caused by misinformation or delayed treatment."
+    },
+    {
+      "style": "h2",
+      "text": "Trust has to be matched by services"
+    },
+    {
+      "style": "normal",
+      "text": "WHO says its current community work includes training traditional healers, social-media influencers and telephone operators. That approach recognises that families already have people they trust; an effective response must engage those relationships."
+    },
+    {
+      "style": "normal",
+      "text": "Messages alone cannot demonstrate that a maternity ward has clean water, that a child can be assessed promptly or that a nurse can return home safely. Health authorities and partners must show what has improved, where access remains difficult and whether essential services continue once emergency attention moves elsewhere."
+    },
+    {
+      "style": "normal",
+      "text": "For mothers making decisions about a sick child, reassurance needs something concrete behind it: a reachable service, a clear explanation and care that earns the confidence it asks families to place in it."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Ville_de_Bunia%2C_Commune_Nyakasanza.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ville_de_Bunia,_Commune_Nyakasanza.jpg",
+    "alt": "Bunia’s Nyakasanza commune.",
+    "caption": "Archive: Nyakasanza commune in Bunia, Democratic Republic of the Congo, 21 May 2023. Geographic context, not a photograph of the current outbreak.",
+    "credit": "Vinny kitenge/Wikimedia Commons",
+    "license": "CC BY-SA 4.0"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Disinfection_Ebola_outbreak_1995.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Disinfection_Ebola_outbreak_1995.png",
+      "alt": "Disinfection during the 1995 Ebola outbreak.",
+      "caption": "Historical archive: a photographer’s shoes are disinfected after leaving an infected area during the 1995 outbreak in Kikwit, then Zaire. This does not depict current procedures or the 2026 response.",
+      "credit": "Ethleen Lloyd/CDC",
+      "license": "Public domain",
+      "afterParagraph": 8
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/MONUSCO_facilitates_delivery_of_medical_logistics_in_Ebola_hit_Beni_18.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MONUSCO_facilitates_delivery_of_medical_logistics_in_Ebola_hit_Beni_18.jpg",
+      "alt": "Medical supplies arriving at Beni airport in 2018.",
+      "caption": "Archive: medical logistics arrive at Beni airport for the Ebola response, 5 August 2018. This is an earlier outbreak, not the current delivery programme.",
+      "credit": "Mamadou Alain Coulibaly/MONUSCO",
+      "license": "CC BY-SA 2.0",
+      "afterParagraph": 13
+    }
+  ]
+}
