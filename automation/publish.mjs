@@ -30,7 +30,7 @@ export function validate(item, now = new Date()) {
   const url = new URL(image.url), source = new URL(image.sourceUrl);
   assert(url.protocol === 'https:' && url.hostname === 'upload.wikimedia.org' && !url.search && !url.hash && !url.username && !url.password && /\.(jpe?g|png|webp)$/i.test(url.pathname), 'Image must use reviewed Wikimedia original');
   assert(source.protocol === 'https:' && source.hostname === 'commons.wikimedia.org' && !source.username && !source.password, 'Missing Commons licence source');
-  assert(['Public domain','CC0','CC BY 4.0','CC BY-SA 4.0','CC BY 3.0','CC BY-SA 3.0','CC BY-SA 2.0'].includes(image.license), 'Unreviewed image licence');
+  assert(['Public domain','CC0','CC BY 4.0','CC BY-SA 4.0','CC BY 3.0','CC BY 2.0','CC BY-SA 3.0','CC BY-SA 2.0'].includes(image.license), 'Unreviewed image licence');
   }
   assert((item.inlineImages || []).every(i=>Number.isInteger(i.afterParagraph) && i.afterParagraph >= 0 && i.afterParagraph < item.paragraphs.length - 1), "Invalid image placement");
   return item;
@@ -51,7 +51,7 @@ async function request(path, body) {
   return response.json();
 }
 const hash = s => createHash('sha256').update(s).digest('hex').slice(0,24);
-const licenceUrl = name => ({'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY 3.0':'https://creativecommons.org/licenses/by/3.0/','CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/','Public domain':'https://creativecommons.org/publicdomain/mark/1.0/'})[name];
+const licenceUrl = name => ({'CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY 3.0':'https://creativecommons.org/licenses/by/3.0/','CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/','Public domain':'https://creativecommons.org/publicdomain/mark/1.0/'})[name];
 const imageDocument = image => ({_type:'image',externalUrl:image.url,alt:image.alt,caption:image.caption,credit:`${image.credit}. ${image.license}.`,sourceUrl:image.sourceUrl,legacyCredit:`${image.caption} ${image.credit}. ${image.license}. Source: ${image.sourceUrl} Licence: ${licenceUrl(image.license)}`});
 export function documents(item) {
   const author = 'author-' + hash(item.author.trim());
