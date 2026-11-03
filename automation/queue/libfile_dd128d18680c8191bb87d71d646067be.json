@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "title": "WHO warns fighting in northern Ethiopia threatens access to emergency maternity care",
+  "subtitle": "After strikes on a displacement camp, the WHO chief warned that fighting is cutting supply routes and leaving hospitals short of staff. Midwives have seen what happens when a patient reaches help too late.",
+  "author": "ATHENA",
+  "category": "Health",
+  "publishedAt": "2026-11-03T06:00:00Z",
+  "topicKey": "northern-ethiopia-who-maternity-care-2026-11-02",
+  "slug": "northern-ethiopia-ambulances-maternity-care-who-warning",
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "Ambulances are barely operating in parts of northern Ethiopia, and insecurity is blocking deliveries of medical supplies, the head of the World Health Organization warned on 2 November. For a woman who develops complications in labour, the danger is twofold: she may struggle to get to hospital, and the hospital she reaches may lack the staff, medicines or equipment to treat her."
+    },
+    {
+      "style": "normal",
+      "text": "WHO Director-General Tedros Adhanom Ghebreyesus issued the warning after reports of attacks on civilians in Amhara and Tigray. Children, including a newborn, were reportedly killed at the Jaari 2 displacement camp in Amhara, he said. In a separate incident in Rama, in neighbouring Tigray, people were reportedly killed while trying to get food."
+    },
+    {
+      "style": "normal",
+      "text": "Two people involved in the rescue operation told Reuters on 30 October that drone strikes on the camp had killed at least 15 people, five of them children. A community representative described helping to bury 13 people at the camp; two of the injured later died at a hospital in Hayk. A resident of the town told Reuters that survivors had taken shelter in a school."
+    },
+    {
+      "style": "normal",
+      "text": "Reuters could not establish who carried out the strikes. A local official told the agency that authorities were helping 36 injured people get treatment. A spokesperson for Prime Minister Abiy Ahmed did not immediately respond to its request for comment."
+    },
+    {
+      "style": "h2",
+      "text": "What a delayed referral costs"
+    },
+    {
+      "style": "normal",
+      "text": "In an earlier account collected by the Ethiopian Midwives Association and the UN Population Fund, Gelawdiwos Gebre, a project coordinator in Tigray, recalled a 35-year-old woman whose placenta had not been delivered after she gave birth at home. Fourteen hours passed before she reached a health centre. By then she was very weak. The centre had been vandalised and lacked the means to treat her. She died four hours later."
+    },
+    {
+      "style": "normal",
+      "text": "Midwives and their neighbours found ways to keep some care available during that earlier conflict. At Adikelebes Health Center in Tigray, midwife Abraham Fiseha recalled hiding equipment in nearby homes to prevent it from being taken, then visiting pregnant women house to house. Tirhas Lemlem, who was expecting her third child at the time, told the association how going without food had left her worried about the baby’s health."
+    },
+    {
+      "style": "normal",
+      "text": "Those accounts describe the previous war. They do not tell us how many women have missed care since fighting resumed in September. They do explain the distinction behind Monday’s warning: a midwife can take equipment to a woman’s door, but a patient who needs emergency hospital treatment still needs a safe way there."
+    },
+    {
+      "style": "h2",
+      "text": "Where the aid has to go"
+    },
+    {
+      "style": "normal",
+      "text": "On 13 October, before the reported camp strikes, the UN announced an $8.5 million emergency allocation intended to support more than 202,700 people. It covers several regions, including Amhara and Tigray, and several needs, from shelter and water to nutrition and health care. The figure is a target for assistance across those services, not a count of patients treated."
+    },
+    {
+      "style": "normal",
+      "text": "Tedros said WHO and its partners were working to deliver more medical supplies. He also called for protection for civilians and access for health workers. The immediate test is whether a hospital can receive those supplies and whether a family can reach that hospital. For the woman who needed treatment after giving birth, the journey took 14 hours. Even arriving was not enough."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Head_Nurse_Presentation_at_Debre_Berhan_Hospital_%289499575693%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Head_Nurse_Presentation_at_Debre_Berhan_Hospital_%289499575693%29.jpg",
+    "alt": "A head nurse speaks in front of a projected photograph of her colleagues.",
+    "caption": "Archive: The head nurse at Debre Berhan Hospital, Ethiopia, gives a presentation on nursing care, 16 March 2012.",
+    "credit": "Nena Terrell / USAID Ethiopia / Wikimedia Commons",
+    "license": "CC BY 2.0"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Hardworking_Midwives_at_the_Dila_Health_Center_%289575336314%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hardworking_Midwives_at_the_Dila_Health_Center_%289575336314%29.jpg",
+      "alt": "Four health workers stand together inside Dila Health Center.",
+      "caption": "Archive: Midwives at Dila Health Center in southern Ethiopia, 10 July 2013. This is a different facility from those described in Tigray.",
+      "credit": "Kate Klein / USAID Ethiopia / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "afterParagraph": 6
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/USAID_Tigray_5.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:USAID_Tigray_5.jpg",
+      "alt": "People gather around a blue shelter kit at an aid distribution in Tigray.",
+      "caption": "Archive: Distribution of shelter kits in Tigray, 15 March 2021, during the earlier conflict.",
+      "credit": "USAID / Wikimedia Commons",
+      "license": "Public domain",
+      "afterParagraph": 9
+    }
+  ],
+  "approved": true,
+  "sourceLibraryId": "libfile_dd128d18680c8191bb87d71d646067be",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  }
+}
