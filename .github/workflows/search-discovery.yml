@@ -1,0 +1,45 @@
+name: ATHENA search discovery
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/notify-search.mjs', '.github/workflows/search-discovery.yml']
+  workflow_run:
+    workflows: ['ATHENA publishing']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '45 6,12,18 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: athena-search-discovery
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/cache/restore@v4
+        with:
+          path: .indexnow
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: indexnow-v1-
+      - name: Notify search engines of live changes
+        run: |
+          for attempt in 1 2 3 4 5; do
+            if node scripts/notify-search.mjs; then exit 0; fi
+            if [ "$attempt" -lt 5 ]; then sleep 30; fi
+          done
+          exit 1
+      - uses: actions/cache/save@v4
+        with:
+          path: .indexnow
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
