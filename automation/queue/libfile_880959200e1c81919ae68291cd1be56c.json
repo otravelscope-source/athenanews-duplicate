@@ -50,7 +50,7 @@
     }
   ],
   "image": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Marta_Kostyuk_%282023_US_Open%29_20_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Marta_Kostyuk_%282023_US_Open%29_20_%28cropped%29.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marta_Kostyuk_%282023_US_Open%29_20_%28cropped%29.jpg",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "license": "CC BY-SA 4.0",
@@ -60,7 +60,7 @@
   },
   "inlineImages": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Elena_Rybakina_%282025_DC_Open%29_11_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Elena_Rybakina_%282025_DC_Open%29_11_%28cropped%29.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elena_Rybakina_%282025_DC_Open%29_11_%28cropped%29.jpg",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "license": "CC BY-SA 4.0",
@@ -70,7 +70,7 @@
       "afterParagraph": 2
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Linda_Noskov%C3%A1_%282023_US_Open%29_01_%28cropped2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Linda_Noskov%C3%A1_%282023_US_Open%29_01_%28cropped2%29.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linda_Noskov%C3%A1_%282023_US_Open%29_01_%28cropped2%29.jpg",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "license": "CC BY-SA 4.0",
