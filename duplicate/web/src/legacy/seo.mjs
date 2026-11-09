@@ -4,7 +4,7 @@ export const articleUrl=(a,siteUrl)=>siteUrl+'/article/'+encodeURIComponent(a.id
 export function absoluteImage(value,siteUrl){try{const u=new URL(value,siteUrl);return ['https:','http:'].includes(u.protocol)&&!u.username&&!u.password?u.href:''}catch{return ''}}
 export function jsonLD(value){return JSON.stringify(value).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');}
 export function websiteSchema(siteUrl){return {'@context':'https://schema.org','@graph':[
- {'@type':'NewsMediaOrganization','@id':siteUrl+'/#publisher',name:'ATHENA',url:siteUrl+'/',logo:siteUrl+'/favicon.svg',description:'Independent reporting and perspectives with women and children at the centre of the story.',email:'otravelscope@gmail.com'},
+ {'@type':'NewsMediaOrganization','@id':siteUrl+'/#publisher',name:'ATHENA',url:siteUrl+'/',sameAs:['https://substack.com/@athenawomennews','https://athenawomennews.substack.com/'],logo:siteUrl+'/favicon.svg',description:'Independent reporting and perspectives with women and children at the centre of the story.'},
  {'@type':'WebSite','@id':siteUrl+'/#website',name:'ATHENA',url:siteUrl+'/',publisher:{'@id':siteUrl+'/#publisher'},inLanguage:'en',description:'Global news, culture and perspectives concerning women and children.'}
 ]};}
 export function articleSchema(a,siteUrl){
