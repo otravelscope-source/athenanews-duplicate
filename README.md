@@ -1,5 +1,7 @@
 # ATHENA independent news website
 
+Read [ATHENA — global news for women and children](https://athenawomensnews.pages.dev/). Follow the [latest stories by RSS](https://athenawomensnews.pages.dev/rss.xml) or visit the [subscription page](https://athenawomensnews.pages.dev/subscribe).
+
 Start with [START-HERE.md](START-HERE.md). Deployment and maintenance instructions are in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 Node.js 24.19+ (24.x). No npm dependencies. Local setup: `cp .env.example .env`, `npm run setup -- YOUR_EMAIL`, then `npm start`.
