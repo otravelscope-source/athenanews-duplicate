@@ -20,3 +20,14 @@ test('image probe falls back to GET when HEAD is rejected and rejects unavailabl
  await assert.rejects(()=>checkImage('https://upload.wikimedia.org/example.jpg',async()=>new Response('',{status:403})),/HTTP 403/);
  await assert.rejects(()=>checkImage('https://upload.wikimedia.org/example.jpg',async()=>new Response('error',{headers:{'content-type':'text/html'}})),/Image unavailable/);
 });
+
+test('IGO photo credits retain the intergovernmental licence on cover and inline photographs',()=>{
+  const a=make('igophotos');
+  for(const img of [a.image,...a.inlineImages]) img.license='CC BY-SA 3.0 IGO';
+  const story=documents(validate(a,now))[2];
+  for(const img of [story.mainImage,...story.body.filter(b=>b._type==='image')]){
+    assert.match(img.credit,/CC BY-SA 3\.0 IGO/);
+    assert.ok(img.legacyCredit.endsWith('https://creativecommons.org/licenses/by-sa/3.0/igo/'));
+  }
+});
+

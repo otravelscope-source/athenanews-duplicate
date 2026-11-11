@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "title": "Gaza’s children face another winter in flooded tents as UNICEF says Israel blocked a key repair",
+  "subtitle": "Only two of six pumps still work at a Gaza City basin where rainwater mixes with sewage. UNICEF says it has the money and equipment for repairs, but lacks permission to bring the equipment in.",
+  "topicKey": "gaza-winter-sheikh-radwan-pump-repair-2026-11",
+  "slug": "gaza-children-winter-floods-sheikh-radwan-repairs",
+  "category": "Children",
+  "author": "ATHENA",
+  "publishedAt": "2026-11-11T09:03:35Z",
+  "sourceLibraryId": "libfile_3013355b48e88191ba870c91c5ba1fd8",
+  "approved": true,
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "text": "After the rain flooded her family’s tent in Nuseirat, seven-year-old Samar helped gather what they could keep. Her family had already fled Jabalia in northern Gaza. Now even the bedding in their shelter was wet. “I don’t know where to sit or where to sleep,” she told UNICEF.",
+      "style": "normal"
+    },
+    {
+      "text": "The storm that swept through Gaza on 7 and 8 November damaged shelters and latrines across the territory. In Deir al-Balah, a sand dune collapsed onto a tent after the downpour, killing a mother and her three children, aged four, five and eight, according to UNICEF. In Gaza City, farther north, the agency is trying to prevent a different danger: sewage spilling from a stormwater basin into streets where displaced families live.",
+      "style": "normal"
+    },
+    {
+      "text": "At the Sheikh Radwan basin, only two of six pumps are working. Rain is collecting faster than those pumps can remove it, UNICEF spokesman James Elder told reporters in Geneva on 10 November. The water has mixed with sewage. An overflow could carry it into tents, exposing children to contaminated water where they eat and sleep. Elder was warning of what could happen at the basin; he did not attribute the weekend’s flooding across Gaza to it.",
+      "style": "normal"
+    },
+    {
+      "text": "Elder said UNICEF had spent more than a year seeking approval for the repair. The agency had drawn up plans for the $3 million project, raised the money and secured the equipment. In recent days, he said, COGAT, the Israeli military body responsible for coordinating humanitarian affairs in Gaza, had rejected the project on security grounds. Reuters reported on 10 November that COGAT had not immediately responded to its request for comment.",
+      "style": "normal"
+    },
+    {
+      "text": "Elsewhere in Gaza, municipal crews face a choice each time they start a drainage pump. Imad Abdel Jawad, a municipal engineer in Al Maghazi, told WIRED Middle East that his team had no separate diesel allocation for clearing floodwater. The fuel comes from the supply for the wells. Pumping water out of people’s shelters leaves less diesel to bring them water they can use.",
+      "style": "normal"
+    },
+    {
+      "text": "UNICEF estimates that 950,000 displaced people across Gaza live in places exposed to flooding. Of those, about 400,000 live in the areas at greatest risk, and nearly half of that group are children. Those figures describe where people are sheltering, not how many have already lost their tents. For now, families are salvaging belongings while relief crews clear drains and distribute blankets. UNICEF said it and its partners had cleared sewage and stormwater at more than 50 locations in the week covered by its November statement.",
+      "style": "normal"
+    },
+    {
+      "text": "For a child with nowhere dry to sleep, a blanket matters that night. Whether it stays dry through the next storm also depends on work no family can do from inside a tent. At Sheikh Radwan, UNICEF says the equipment for that work is ready. The decision still facing the Israeli authorities is whether to let it in.",
+      "style": "normal"
+    },
+    {
+      "text": "The Athena Perspective.",
+      "style": "normal"
+    }
+  ],
+  "image": {
+    "caption": "Archive: Rain falls on shelters in Deir al-Balah, 23 January 2025.",
+    "alt": "Rain falls on shelters in Deir al-Balah, 23 January 2025.",
+    "credit": "Ashraf Amra / UNRWA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "license": "CC BY-SA 3.0 IGO",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah%2C_Gaza_Strip.jpg",
+    "originalDate": "23 January 2025"
+  },
+  "inlineImages": [
+    {
+      "caption": "Archive: Sewage beside tents in Deir al-Balah, 20 August 2024.",
+      "alt": "Sewage beside tents in Deir al-Balah, 20 August 2024.",
+      "credit": "Ashraf Amra / UNRWA",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sewage_water_near_the_tents_of_displaced_people_in_Deir_el-Balah,_Gaza_Strip.jpg",
+      "license": "CC BY-SA 3.0 IGO",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sewage_water_near_the_tents_of_displaced_people_in_Deir_el-Balah%2C_Gaza_Strip.jpg",
+      "originalDate": "2024-08-20",
+      "afterParagraph": 2
+    },
+    {
+      "caption": "Archive: Displaced families’ tents in Al-Mawasi, 22 January 2025.",
+      "alt": "Displaced families’ tents in Al-Mawasi, 22 January 2025.",
+      "credit": "Ashraf Amra / UNRWA",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Al-Mawasi_area_where_displaced_Palestinians_live_in_tents,_Gaza_Strip.jpg",
+      "license": "CC BY-SA 3.0 IGO",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/An_aerial_view_of_Al-Mawasi_area_where_displaced_Palestinians_live_in_tents%2C_Gaza_Strip.jpg",
+      "originalDate": "2025-01-22",
+      "afterParagraph": 5
+    }
+  ]
+}
