@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "author": "ATHENA",
+  "category": "Health",
+  "topicKey": "tu-stroma-ovarian-cancer-precursor-study-2026-11",
+  "slug": "blood-test-ovarian-cancer-precursor-fallopian-tube",
+  "title": "A blood test picked up an ovarian cancer precursor usually found only after surgery",
+  "subtitle": "Researchers found an RNA signal in blood from women with a microscopic fallopian tube lesion. The harder question is what a positive result would mean for a woman who feels well.",
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A pathologist usually finds the lesion called STIC by examining a fallopian tube that a surgeon has already removed. Now an international research team has found a sign of that same lesion in blood. The finding, published on 10 November in Nature Medicine, raises the possibility of spotting a precursor to an aggressive ovarian cancer while it is still confined to the lining of the tube."
+    },
+    {
+      "style": "normal",
+      "text": "The location matters. A cancer diagnosed in the ovary can begin in the fallopian tube. One early change is a patch of abnormal cells called serous tubal intraepithelial carcinoma, or STIC. Researchers led by the Hoag Family Cancer Institute in California looked for a molecule called Tu-stroma, a strand of RNA carried in tiny particles that cells release. They wanted to know whether blood could distinguish women with this otherwise hidden patch of cells from women without it."
+    },
+    {
+      "style": "normal",
+      "text": "The team examined blood samples from 506 people, including 43 with STIC and 232 with high-grade serous carcinoma. The other participants had benign lesions or normal tissue. In a separate group used to check the test’s accuracy, it identified 92.3 per cent of those with STIC and gave a negative result for 98.2 per cent of healthy controls, according to Hoag. The RNA signal also distinguished women with STIC from healthy controls more accurately than CA-125, a protein already measured in ovarian cancer care."
+    },
+    {
+      "style": "normal",
+      "text": "For a woman opening a test result, those percentages leave the most pressing question unanswered: if mine is positive, how likely am I to have the lesion? The researchers worked backwards from stored samples and known diagnoses. In routine screening, the mix would be different. If a lesion is rare, even a small fraction of healthy women testing positive can outnumber those correctly identified. And confirming a microscopic abnormality in a fallopian tube is a much bigger undertaking than repeating a blood draw."
+    },
+    {
+      "style": "normal",
+      "text": "An earlier trial shows why that distinction matters. More than 200,000 postmenopausal women took part in a British study that compared screening with no screening. One screening strategy, which used CA-125 followed by ultrasound when indicated, found more cancers at an early stage. Long-term follow-up showed no significant reduction in deaths from ovarian or tubal cancer. The US National Cancer Institute also notes that false alarms can lead to surgery, including removal of ovaries that turn out not to be cancerous."
+    },
+    {
+      "style": "normal",
+      "text": "The stakes are different for women who carry a harmful BRCA1 or BRCA2 variant and are weighing surgery to reduce their cancer risk. Removing the ovaries before natural menopause brings menopause forward. A reliable way to identify an early lesion could help inform that decision. This study does not establish that a negative blood test makes it safe to postpone surgery."
+    },
+    {
+      "style": "normal",
+      "text": "The authors say the next test is to enrol women as they come into care, before anyone knows who has the lesion. What women need from that research is an account of what happens after the result: who gets an earlier diagnosis, who undergoes an unnecessary operation, and whether finding the signal changes who survives."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "alt": "Microscope photograph of a stained fallopian tube lesion.",
+    "caption": "Archive: A microscopic view of serous tubal intraepithelial carcinoma, 31 December 2019.",
+    "credit": "Nephron / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Serous_tubal_intraepithelial_carcinoma_--_intermed_mag.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serous_tubal_intraepithelial_carcinoma_--_intermed_mag.jpg",
+    "originalDate": "2019-12-31"
+  },
+  "inlineImages": [
+    {
+      "alt": "Racks of capped blood sample tubes.",
+      "caption": "Archive: Blood samples arranged for testing, 3 September 2024. These are not specimens from the study.",
+      "credit": "Fumikas Sagisavas / Wikimedia Commons",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Blood_test_samples.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blood_test_samples.jpg",
+      "originalDate": "2024-09-03",
+      "afterParagraph": 2
+    },
+    {
+      "alt": "An ultrasound machine with two different probes.",
+      "caption": "Archive: An ultrasound machine with vaginal and abdominal probes, 18 February 2014.",
+      "credit": "Mikael Häggström / Wikimedia Commons",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Transvaginal_ultrasonography_device.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transvaginal_ultrasonography_device.png",
+      "originalDate": "2014-02-18",
+      "afterParagraph": 4
+    }
+  ],
+  "publishedAt": "2026-11-12T06:06:11+00:00",
+  "sourceLibraryId": "libfile_721a06e3c290819191958a0535b8ea8b",
+  "approved": true,
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  }
+}
