@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "author": "ATHENA",
+  "category": "World",
+  "slug": "sudan-power-cuts-water-pumps-families",
+  "topicKey": "sudan-power-water-unicef-november-2026",
+  "title": "When Sudan’s water pumps stop, the work falls to families",
+  "subtitle": "Drone strikes have disrupted the power supply just as poor rains threaten the cereal harvest. In one Sudanese community, a solar-powered borehole shows what reliable water can give a girl back: time in school.",
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "Fatima and her older daughter, Amna, used to leave early and come home late with two containers of water between them. In Aldamer, in Sudan’s River Nile State, Amna tried to fit school around those trips. Then a solar-powered borehole went in behind the family’s home. Even when attacks on infrastructure cut the electricity, the pump kept working. By March, when UNICEF USA published the family’s account, Amna and her siblings were attending school regularly."
+    },
+    {
+      "style": "normal",
+      "text": "On 10 November, UNICEF warned that the arrangement keeping water close to Amna’s home was far from the experience of families elsewhere in Sudan. Spokesman James Elder told a UN briefing in Geneva that drone strikes had hit up to 15 power stations in October, with strikes every day in the month’s final week. When the electricity fails, water utilities can lose both the power to pump water and the means to treat it. Families must then pay for another source or use water whose safety they cannot be sure of."
+    },
+    {
+      "style": "normal",
+      "text": "In Khartoum, restoring electricity alone will not bring water back to every tap. UNICEF estimates that leaks affect 60 per cent of the capital’s water network. That is the share of the network affected, not the proportion of drinking water lost. Years of war damaged pipes; long shutdowns also allowed them to corrode. As families return, a system that stood idle must once again carry water to homes, schools and clinics."
+    },
+    {
+      "style": "normal",
+      "text": "Residents of one community in Bahri spent days and their own money trying to locate a leak. In an account published by UNICEF on 11 November, State Water Corporation engineers described bringing in a remotely operated camera and finding the fault in under an hour. When the team called back three days later, residents said the leak had stopped. The engineers are now training colleagues to use the equipment. The repair shows what a local crew can put right, even as interruptions to power remain beyond its control."
+    },
+    {
+      "style": "normal",
+      "text": "There is a second cost to losing a pump. Farmers who rely on electricity for irrigation are trying to grow food in a season when rainfall across much of Sudan’s cropland has been below average. The UN Food and Agriculture Organization reported that the shortage of rain had already affected how well cereal seeds sprouted and took root. By the November briefing, Elder said, the main opportunity to plant for the 2026–27 cereal harvest had largely passed. Late rain can help a standing crop; it cannot give a farmer back the weeks lost at sowing."
+    },
+    {
+      "style": "normal",
+      "text": "UNICEF is asking for protection of civilian infrastructure, access across front lines and sustained funding for water, nutrition and health services. Elder said the agency’s Sudan response was only about one-third funded. Aldamer offers one measure of what that spending can buy. Fatima can now fill a container from a hose behind her house. Her husband, Ahmed, serves on the water users’ committee and helps maintain the solar installation. On an ordinary school morning, keeping that pump running means Amna can go to class instead of going with her mother to find water."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "alt": "A woman balances a water container on her head in Darfur.",
+    "caption": "Archive: A woman carries water in Darfur, Sudan, on 13 June 2006.",
+    "credit": "Leonard Tedd / DFID / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Woman_collecting_water%2C_Darfur%2C_Sudan%2C_2006_%288405060607%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woman_collecting_water,_Darfur,_Sudan,_2006_(8405060607).jpg",
+    "originalDate": "2006-06-13"
+  },
+  "inlineImages": [
+    {
+      "alt": "Night-time view of Khartoum and the rivers from orbit.",
+      "caption": "Archive: Khartoum at night, photographed from the International Space Station on 11 November 2020, before the current war.",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/ISS-64_Khartoum%2C_Sudan.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS-64_Khartoum,_Sudan.jpg",
+      "originalDate": "2020-11-11",
+      "afterParagraph": 2
+    },
+    {
+      "alt": "A farmer stands beside irrigated rows in Dongola.",
+      "caption": "Archive: A farmer inspects an irrigated field in Dongola, northern Sudan, on 10 January 2026.",
+      "credit": "Hosam Badraldin / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Sudanese_farmer_inspecting_irrigated_field_Dongola.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sudanese_farmer_inspecting_irrigated_field_Dongola.jpg",
+      "originalDate": "2026-01-10",
+      "afterParagraph": 4
+    }
+  ],
+  "publishedAt": "2026-11-13T06:03:44+00:00",
+  "sourceLibraryId": "libfile_cbfc202276d08191b8780a3c54bec574",
+  "approved": true,
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  }
+}
