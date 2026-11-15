@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "topicKey": "who-adult-type-1-diabetes-insulin-monitoring-2026-11",
+  "slug": "who-type-1-diabetes-insulin-glucose-test-strips",
+  "title": "WHO calls for home glucose testing alongside insulin. For many families, the strips cost more.",
+  "subtitle": "New guidance for adults with type 1 diabetes puts the cost of checking blood sugar in focus. In pregnancy, access to monitoring can also affect whether a newborn needs intensive care.",
+  "author": "ATHENA",
+  "category": "Health",
+  "publishedAt": "2026-11-15T06:02:23+00:00",
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "In Mali, the price of 50 blood glucose test strips could reach nearly 13 days’ wages for a low-paid worker, researchers found in a six-country survey. Each strip buys one reading. For someone taking insulin several times a day, the expense starts again when the pack runs out."
+    },
+    {
+      "style": "normal",
+      "text": "On 14 November, the World Health Organization announced its first guidelines devoted to type 1 diabetes in adults. WHO recommends regular glucose checks alongside insulin, including where health services have been disrupted by an emergency. The two belong together: insulin keeps a person with type 1 diabetes alive, and a glucose reading helps them judge, with the treatment plan agreed with their clinician, how much they need. A clinic test that averages blood sugar over several months cannot tell someone what their level is before dinner tonight."
+    },
+    {
+      "style": "normal",
+      "text": "Margaret Ewen of Health Action International and her colleagues surveyed selected public facilities and private pharmacies in Fiji, Indonesia, Kyrgyzstan, Mali, Peru and Vietnam in 2022 and 2023. Their study, published in BMJ Public Health in 2025, found that in their cost comparison, checking glucose at home cost more than the human insulin and syringes. Fifty strips ranged from one day’s wages in Fiji to 12.8 days in Mali, using the pay of the lowest-paid unskilled government worker as the benchmark. Those figures describe prices at the time and places surveyed, rather than what every household pays today."
+    },
+    {
+      "style": "normal",
+      "text": "For a woman with type 1 diabetes who becomes pregnant, there is another reason to know what happens to her glucose between clinic visits. Her insulin needs change during pregnancy. A finger-prick test gives her a reading at one moment; a sensor worn on the skin can show whether glucose is rising or falling between checks. In separate pregnancy guidance issued in 2025, WHO recommended continuous monitoring for women with type 1 diabetes where feasible."
+    },
+    {
+      "style": "normal",
+      "text": "A trial at 31 hospitals in Europe and North America helps explain that recommendation. Researchers randomly assigned 215 pregnant women with type 1 diabetes either to add a continuous monitor to their usual finger-prick checks or to continue those checks alone. Among newborns with outcome data, 27 per cent in the sensor group spent more than 24 hours in neonatal intensive care, compared with 43 per cent in the other group. The trial, published in The Lancet in 2017, studied women already receiving intensive insulin treatment. It did not test whether handing out sensors without that clinical support would deliver the same benefit."
+    },
+    {
+      "style": "normal",
+      "text": "WHO’s target for 2030 is for everyone with type 1 diabetes to have access to both affordable insulin and a way to check their own blood glucose. The agency is asking countries to involve people who live with the condition in designing and evaluating services. They can answer a question that a clinic’s inventory cannot: after someone takes a meter home, where can she get the next pack of strips, and what will it cost her?"
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "credit": "Retired electrician / Wikimedia Commons",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LifeScan_Onetouch_test_strips,_June_2026_01.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/LifeScan_Onetouch_test_strips%2C_June_2026_01.jpg",
+    "originalDate": "2026-06-23",
+    "caption": "Archive: Blood glucose test strips and their container, 23 June 2026.",
+    "alt": "Test strips beside an open container."
+  },
+  "inlineImages": [
+    {
+      "credit": "PerPlex / Wikimedia Commons",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Insulin_pen.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Insulin_pen.JPG",
+      "originalDate": "2005-08-26",
+      "caption": "Archive: Insulin pens with their caps removed, 26 August 2005.",
+      "alt": "Two insulin pens and their caps.",
+      "afterParagraph": 1
+    },
+    {
+      "credit": "Sjö / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BGM_twopart.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BGM_twopart.JPG",
+      "originalDate": "2016-02-20",
+      "caption": "Archive: A glucose sensor on an upper arm beside its handheld reader, 20 February 2016.",
+      "alt": "A person holds a glucose reader beside a round sensor.",
+      "afterParagraph": 3
+    }
+  ],
+  "approved": true,
+  "sourceLibraryId": "libfile_0e8e8c67cfbc8191932e93fac76e9c4e",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  }
+}
