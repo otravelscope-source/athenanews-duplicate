@@ -35,6 +35,11 @@ const article = defineType({
     defineField({ name: 'title', type: 'string', validation: R => R.required() }),
     defineField({ name: 'subtitle', type: 'text', rows: 3 }),
     defineField({ name: 'slug', type: 'slug', options: { source: 'title', maxLength: 180 }, validation: R => R.required() }),
+    defineField({name:'video', title:'Related video (optional)', type:'object', description:'Choose footage that directly supports this story and allows embedding. Identify archive footage in the title.', fields:[
+      defineField({name:'id',title:'YouTube video ID',description:'The 11 characters after watch?v= or youtu.be/.',type:'string',validation:R=>R.required().regex(/^[A-Za-z0-9_-]{11}$/)}),
+      defineField({name:'title',title:'Video caption',type:'string',validation:R=>R.required()}),
+      defineField({name:'source',title:'Publisher or creator',type:'string',validation:R=>R.required()})
+    ]}),
     defineField({ name: 'legacyId', type: 'string', readOnly: true, description: 'Preserves the existing article URL and reader-history mapping.' }),
     defineField({ name: 'authors', type: 'array', of: [{ type: 'reference', to: [{ type: 'author' }] }], validation: R => R.required().min(1) }),
     defineField({ name: 'category', type: 'reference', to: [{ type: 'category' }], validation: R => R.required() }),
