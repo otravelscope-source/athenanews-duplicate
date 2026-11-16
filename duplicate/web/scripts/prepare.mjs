@@ -16,7 +16,7 @@ await writeFile('public/_headers', `/*
 ${process.env.SITE_NOINDEX === 'false' ? '' : '  X-Robots-Tag: noindex, nofollow\n'}  X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://www.house.mn.gov https://commons.wikimedia.org https://thumb.wikimedia.org https://upload.wikimedia.org https://api.nga.gov; connect-src 'self' ${supabase}; frame-src ${newsletter}; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://www.house.mn.gov https://commons.wikimedia.org https://thumb.wikimedia.org https://upload.wikimedia.org https://api.nga.gov; connect-src 'self' ${supabase}; frame-src ${newsletter} https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests
 /account
   Cache-Control: no-store
   X-Robots-Tag: noindex, nofollow
