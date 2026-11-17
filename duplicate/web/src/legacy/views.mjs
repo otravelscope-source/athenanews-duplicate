@@ -39,6 +39,9 @@ export function home(articles,section,siteUrl){
  return layout(`${nav}<main id="content"><div class="edition"><span>THE NEWS DESK</span><span>News. Ideas. A different perspective.</span></div>${content}${subscribePanel()}</main>`,{title:section==='All stories'?'ATHENA — Global news for women and children':section+' news | ATHENA',description:section==='All stories'?'Global news, culture and perspectives with women and children at the centre of the story. Read ATHENA’s latest reporting.':section+' reporting and perspectives from ATHENA, with women and children at the centre of the story.',canonical:siteUrl+(section==='All stories'?'/':sectionPath(section)),imageUrl:lead?.image?absoluteImage(lead.image,siteUrl):''});
 }
 const storyVideos = new Map([
+["layan-should-have-grown-older-alrawabi-school-for-girls",{"id":"xxKnhO7Nq7I","title":"AlRawabi School for Girls: official first-season trailer (2021)","source":"Netflix"}],
+["northwestern-first-women-prison-education-graduates",{"id":"B1tbsBVsN-8","title":"An earlier graduating class at Stateville, 2023","source":"Northwestern University"}],
+["bangladesh-garment-workers-december-wage-board-pay-rise",{"id":"YwdUZ0OrPTI","title":"Working conditions in Bangladesh’s garment factories, 2023","source":"International Labour Organization"}],
  ['gaza-children-winter-floods-sheikh-radwan-repairs',{id:'l633WMwurQo',title:'Winter storms endanger children in Gaza',source:'UNICEF reporting from Deir al-Balah'}],
  ['dolores-huerta-dies-workers-rights-legacy',{id:'WZ35FJ27M-A',title:'Dolores Huerta in her own words, 1995',source:'California Farm Workers Oral History Project'}],
  ['afghanistan-primary-school-girls-next-generation-teachers', {id:'5Yxc6ctDiZw', title:'Girls’ education in Afghanistan', source:'UNICEF'}]]);
