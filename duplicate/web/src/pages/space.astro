@@ -5,7 +5,7 @@ const stories=(await articles()).filter(a=>/space|astronomy/i.test(a.category?.t
 ---
 <Layout title="Space & Astronomy | ATHENA" description="Explore the universe with ATHENA: astronomy, space exploration and documentaries.">
 <section class="text-page"><p class="eyebrow">ATHENA / SPACE & ASTRONOMY</p><h1>A wider universe.</h1><p class="standfirst">Discoveries, missions and the people asking what lies beyond our world.</p>
-{stories.length>0 && <section><h2>Space reporting</h2>{stories.map(a=><p><a href={'/article/'+a.slug.current+'/'}>{a.title}</a></p>)}</section>
+{stories.length>0 && <section><h2>Space reporting</h2>{stories.map(a=><p><a href={'/article/'+a.slug.current+'/'}>{a.title}</a></p>)}</section>}
 <h2>Documentary room</h2><p>Films from the organisations exploring our universe. Archive films provide context; they are not live mission updates.</p>
 <h3>Hubble: The Great Space Telescope</h3><p>NASA’s documentary traces the telescope’s scientific achievements and the human work that kept it observing.</p>
 <iframe class="news-video" title="NASA Hubble documentary" src="https://www.youtube-nocookie.com/embed/Lo43Gq_Xe1M" loading="lazy" allowfullscreen></iframe>
