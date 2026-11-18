@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "topicKey": "voyager-one-light-day-2026-11-18",
+  "slug": "voyager-one-light-day-earth-two-day-radio-reply",
+  "title": "Voyager 1 approaches a distance so vast that a reply takes two days",
+  "subtitle": "On 18 November, the spacecraft launched in 1977 is due to become the first human-made object one light-day from Earth. Its remaining instruments are still measuring interstellar space.",
+  "author": "ATHENA",
+  "category": "World",
+  "publishedAt": "2026-11-18T06:00:47+00:00",
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A radio message sent from Earth to Voyager 1 will soon need a full day to arrive, and its answer another day to come home. NASA expects the spacecraft to reach a distance of one light-day on Wednesday, 18 November, at 10:16 a.m. UTC — 1:16 p.m. in Kampala — nearly half a century after launch."
+    },
+    {
+      "style": "normal",
+      "text": "At about 25.9 billion kilometres from Earth, Voyager 1 will be the first human-made object to reach that distance. A light-day measures how far light travels in 24 hours; it does not mean the spacecraft has travelled at light speed. Voyager has taken 49 years to get there."
+    },
+    {
+      "style": "normal",
+      "text": "Nothing aboard the probe is scheduled to change at that moment. It will cross no new physical boundary. The important crossing came in August 2012, when Voyager 1 entered interstellar space beyond the heliosphere, the vast bubble created by the Sun’s wind and magnetic field. Wednesday’s milestone makes the distance between the spacecraft and its operators easier to grasp."
+    },
+    {
+      "style": "normal",
+      "text": "Launched on 5 September 1977, Voyager 1 flew past Jupiter in 1979 and Saturn in 1980. Its twin, Voyager 2, took a different route that also brought it to Uranus and Neptune. Voyager 2 is not expected to reach one light-day from Earth until 2035."
+    },
+    {
+      "style": "normal",
+      "text": "The pictures from those journeys remain among the mission’s best-known achievements. In February 1990, Voyager 1 turned its camera towards Earth and recorded the image that became known as the Pale Blue Dot. Our planet occupied less than a pixel. The cameras were then switched off; the science arriving now is measurements of the environment around the spacecraft, not new photographs."
+    },
+    {
+      "style": "h2",
+      "text": "Keeping the signal alive"
+    },
+    {
+      "style": "normal",
+      "text": "Voyager 1 has two operating science instruments, according to NASA’s current mission inventory. Data reach Earth through the Deep Space Network’s large radio antennas in California, Spain and Australia. The spacecraft and its twin are the only probes measuring interstellar space directly."
+    },
+    {
+      "style": "normal",
+      "text": "Keeping them working requires decisions about which observations to sacrifice. On 17 April, engineers switched off Voyager 1’s Low-energy Charged Particles experiment to conserve electricity. It had measured particles that helped reveal changes in density and pressure beyond the Sun’s bubble. NASA said the order of instrument shutdowns had been agreed by the science and engineering teams years earlier."
+    },
+    {
+      "style": "normal",
+      "text": "The spacecraft’s generators turn heat from decaying plutonium into electrical power, and their output is declining. In September, engineers replaced three operating devices with three alternatives that used less power. The simultaneous swap also had to preserve the distribution of heat needed to keep the ageing spacecraft working. NASA said the change postponed the need to switch off another science instrument, which otherwise could have happened as early as summer 2027."
+    },
+    {
+      "style": "normal",
+      "text": "The next month brought a different problem. Ground antennas failed to detect Voyager 1 during two scheduled contacts on 18 and 19 October. Its signal returned on 20 October before engineers sent troubleshooting commands. NASA’s 29 October update said a set of backup thrusters had automatically taken over, but the cause of the communications interruption was still under investigation."
+    },
+    {
+      "style": "h2",
+      "text": "A mission passed between generations"
+    },
+    {
+      "style": "normal",
+      "text": "In a NASA podcast released on 17 November, deputy project scientist Jamie Rankin recalled arriving at Caltech as a graduate student just six days after Voyager 1 crossed the heliopause. The scientists were still working out what the measurements meant. She entered their meeting wearing a T-shirt, shorts and sandals, and found herself welcomed by a team decades older."
+    },
+    {
+      "style": "normal",
+      "text": "Rankin now helps steward the science that team began. Voyager’s longevity depends on that transfer of knowledge as well as the spacecraft’s hardware: people must continue to interpret unfamiliar measurements and maintain a machine they cannot visit."
+    },
+    {
+      "style": "normal",
+      "text": "For readers wanting to hear from the current team, the Planetary Society plans a free discussion with project manager Suzanne Dodd, mission manager Kareem Badaruddin and project scientist Linda Spilker. It begins at 01:00 UTC on 19 November — 4 a.m. in Kampala — on the society’s YouTube channel. An illustration by space artist Don Davis will be unveiled during the programme; it is an artist’s reconstruction, not a photograph transmitted from Voyager."
+    },
+    {
+      "style": "normal",
+      "text": "NASA has also released the short explanatory video How Far Away Is Voyager 1? One Light-Day, Explained. The distance is extraordinary, but the continuing exchange is just as remarkable: a spacecraft built in the 1970s is still sending information from a place no successor has reached."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "credit": "NASA/Kennedy Space Center",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voyager_1_reencapsulated.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Voyager_1_reencapsulated.jpg",
+    "originalDate": "1977-08-27",
+    "caption": "Archive: Voyager 1 during preparations for launch in Florida on 27 August 1977.",
+    "alt": "Voyager 1 with its large dish antenna inside an assembly facility."
+  },
+  "inlineImages": [
+    {
+      "credit": "NASA",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voyager_1_Launch.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Voyager_1_Launch.jpg",
+      "originalDate": "1977-09-05",
+      "caption": "Archive: Voyager 1 launches on a Titan-Centaur rocket on 5 September 1977.",
+      "alt": "A Titan-Centaur rocket lifts off amid clouds of exhaust.",
+      "afterParagraph": 3
+    },
+    {
+      "credit": "NASA/JPL-Caltech; processing by Kevin M. Gill",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pale_Blue_Dot_from_Voyager_1_-_PIA23645.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pale_Blue_Dot_from_Voyager_1_-_PIA23645.png",
+      "originalDate": "1990-02-14",
+      "caption": "Archive: Earth in Voyager 1’s Pale Blue Dot image, taken on 14 February 1990. This colour composite was reprocessed in 2020; Earth is the tiny speck in the sunbeam right of centre.",
+      "alt": "Earth appears as a tiny speck in a band of scattered sunlight.",
+      "afterParagraph": 8
+    }
+  ],
+  "approved": true,
+  "sourceLibraryId": "libfile_db2f465c8a6c8191a8b0629da65769c1",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  }
+}
