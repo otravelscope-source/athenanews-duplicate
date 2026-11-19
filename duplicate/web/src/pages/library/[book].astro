@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {readFileSync} from 'node:fs';
+import {gunzipSync} from 'node:zlib';
+export function getStaticPaths(){return [['frankenstein','84','Frankenstein','Mary Shelley',28],['pride-and-prejudice','1342','Pride and Prejudice','Jane Austen',61],['little-women','514','Little Women','Louisa May Alcott',47]].map(([book,id,title,author,count])=>({params:{book:String(book)},props:{id,title,author,count}}));}
+const {id,title,author,count}=Astro.props;
+const raw=gunzipSync(readFileSync('src/books/'+id+'.gz')).toString('utf8').replace(/\r/g,'');
+const match=raw.match(/^([\s\S]*?^\*\*\* START OF THIS PROJECT GUTENBERG EBOOK[^\n]*\n)([\s\S]*?)(^\*\*\* END OF THIS PROJECT GUTENBERG EBOOK[\s\S]*)$/m);
+if(!match)throw Error('Book boundaries missing: '+id);
+const blocks=match[2].trim().split(/\n\s*\n/);
+const sections=[{heading:'Opening pages',paras:[] as string[]}];
+for(const block of blocks){const s=block.trim();if(/^(Chapter (?:\d+|[A-Z-]+)|Letter [1-4])$/i.test(s))sections.push({heading:s,paras:[]});else sections[sections.length-1].paras.push(s);}
+if(sections.length!==Number(count)+1)throw Error('Incomplete chapter list: '+id+' '+sections.length);
+---
+<Layout title={title+' by '+author+' | ATHENA Library'} description={'Read the complete text of '+title+' in the ATHENA Library.'}><article class="book-reader"><a href="/library/">← Library</a><p class="eyebrow">ATHENA / COMPLETE EDITION</p><h1>{title}</h1><p class="standfirst">{author}</p><details id="contents"><summary>Contents · jump to a chapter</summary><ol>{sections.map((s,i)=><li><a href={'#part-'+i}>{s.heading}</a></li>)}</ol></details>{sections.map((s,i)=><section id={'part-'+i}><h2>{s.heading}</h2>{s.paras.map(p=><p>{p}</p>)}<a href="#contents">Back to contents ↑</a></section>)}<details><summary>Edition credits and Project Gutenberg licence</summary><pre>{match[1]+'\n'+match[3]}</pre></details><p><a href="/library/">Return to the ATHENA Library</a></p></article></Layout>
+<style>.book-reader{max-width:68ch;margin:auto;padding:clamp(24px,5vw,64px) 18px;font:1.13rem/1.7 Georgia,serif}.book-reader h1{font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.05}.book-reader section{margin:3rem 0;scroll-margin:2rem}.book-reader details{border-block:1px solid #ccc;padding:12px 0}.book-reader summary{cursor:pointer;font-weight:700}.book-reader pre{white-space:pre-wrap;overflow-wrap:anywhere}.book-reader a{color:#891730}.book-reader ol{columns:2;padding-left:2rem}@media(max-width:640px){.book-reader ol{columns:1}}</style>
