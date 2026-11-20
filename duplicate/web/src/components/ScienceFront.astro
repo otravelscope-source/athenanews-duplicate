@@ -1,0 +1,15 @@
+---
+const {stories,title,links}=Astro.props;
+const [lead,...rest]=stories;
+const href=a=>'/article/'+encodeURIComponent(a.slug.current)+'/';
+const date=a=>new Date(a.publishedAt).toLocaleDateString('en-GB',{dateStyle:'long',timeZone:'Africa/Kampala'});
+---
+<div class="sciFront">
+<div class="sciTitle"><small>ATHENA SCIENCE DESK</small><h1>{title}</h1></div>
+<div class="sciNav">{links.map(([label,id])=><a href={'#'+id}>{label}</a>)}</div>
+<div class="sciSpread">
+{lead && <article class="sciLead"><a href={href(lead)}>{lead.mainImage?.localUrl && <img fetchpriority="high" src={lead.mainImage.localUrl} alt="" />}<small>{title}</small><h2>{lead.title}</h2></a><p>{lead.subtitle}</p><time>{date(lead)} · {lead.authors?.[0]?.name||'ATHENA'}</time></article>}
+<aside class="sciSide">{rest.slice(0,2).map(a=><article><a href={href(a)}>{a.mainImage?.localUrl && <img src={a.mainImage.localUrl} alt=""/>}<small>Reporting</small><h3>{a.title}</h3></a><time>{date(a)}</time></article>)}{!rest.length && <article><small>Watch</small><h3><a href="#documentaries">Inside the Documentary Room</a></h3></article>}</aside>
+<aside class="sciRail"><small>EXPLORE THIS DESK</small>{links.map(([label,id,description])=><article><a href={'#'+id}><h3>{label}</h3></a><p>{description}</p></article>)}</aside></div>
+<section id="reporting" class="sciList"><h2>From the newsroom</h2>{(rest.length>2?rest.slice(2):stories).map(a=><article>{a.mainImage?.localUrl && <img loading="lazy" src={a.mainImage.localUrl} alt=""/>}<div><a href={href(a)}><h3>{a.title}</h3></a><p>{a.subtitle}</p><time>{date(a)}</time></div></article>)}{!stories.length && <p>Explore the desk’s features below.</p>}</section>
+</div>
