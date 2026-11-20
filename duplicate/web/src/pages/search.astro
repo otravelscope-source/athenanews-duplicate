@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {articles} from '../lib/content';
+const posts=await articles();
+---
+<Layout title="Search articles | ATHENA"><section class="efind"><h1>Search articles</h1><label for="query">Search by headline, topic or keyword</label><form role="search" action="/search/"><input type="search" id="query" name="q" placeholder="Try space, health or Sudan"><button type="submit">Search</button></form><p id="matches" aria-live="polite"></p><ul id="results">{posts.map(a=><li data-terms={[a.title,a.subtitle,a.category?.title].join(' ').toLowerCase()}><small>{a.category?.title}</small><a href={'/article/'+encodeURIComponent(a.slug.current)+'/'}>{a.title}</a></li>)}</ul></section></Layout>

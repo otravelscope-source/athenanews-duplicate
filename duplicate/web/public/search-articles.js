@@ -1,0 +1,2 @@
+const q=document.querySelector('#query');
+if(q){const rows=[...document.querySelectorAll('#results li')];function filter(){const words=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);let count=0;for(const r of rows){r.hidden=!words.every(w=>r.dataset.terms.includes(w));if(!r.hidden)count++}document.querySelector('#matches').textContent=count?count+' article'+(count===1?'':'s'):'No matching articles. Try another keyword.'}q.value=new URLSearchParams(location.search).get('q')||'';q.addEventListener('input',filter);filter()}
