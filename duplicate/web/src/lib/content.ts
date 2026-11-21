@@ -66,6 +66,7 @@ export function articles():Promise<any[]>{
    const held:Record<string,RegExp>={'manila-child-protection-pledges-budgets-2026':/tanzania|kilimanjaro/i,'uganda-measles-rubella-campaign-october-2026':/bangladesh|rupganj|narayanganj/i};
    const mismatch=(img:any)=>img && held[a.slug?.current]?.test(JSON.stringify(img));
    if(mismatch(a.mainImage))delete a.mainImage;
+   if(a.slug?.current==="manila-child-protection-pledges-budgets-2026" && !a.mainImage) a.mainImage={_type:"image",localUrl:"/graphics/manila-child-protection.svg",alt:"Manila: 283 child-protection pledges from 94 countries",caption:"Government commitments announced at the Manila conference, 18–19 November 2026.",credit:"ATHENA graphic. Data: UNICEF.",legacyCredit:"ATHENA graphic. Data: UNICEF, 19 November 2026."};
    if(Array.isArray(a.body))a.body=a.body.filter((b:any)=>b._type!=='image'||!mismatch(b));
    if(!routeSlug(a.slug?.current)||seen.has(a.slug.current))throw new Error('Invalid or duplicate article path');seen.add(a.slug.current);
    if(!a.title?.trim()||!routeSlug(a.category?.slug?.current)||!a.category?.title?.trim())throw new Error('Missing title/category');
