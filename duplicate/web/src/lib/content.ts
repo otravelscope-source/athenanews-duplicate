@@ -63,6 +63,10 @@ export function articles():Promise<any[]>{
   if(!rows.length)throw new Error('No published articles: refusing an empty build');
   const seen=new Set<string>();
   for(const a of rows){
+   const held:Record<string,RegExp>={'manila-child-protection-pledges-budgets-2026':/tanzania|kilimanjaro/i,'uganda-measles-rubella-campaign-october-2026':/bangladesh|rupganj|narayanganj/i};
+   const mismatch=(img:any)=>img && held[a.slug?.current]?.test(JSON.stringify(img));
+   if(mismatch(a.mainImage))delete a.mainImage;
+   if(Array.isArray(a.body))a.body=a.body.filter((b:any)=>b._type!=='image'||!mismatch(b));
    if(!routeSlug(a.slug?.current)||seen.has(a.slug.current))throw new Error('Invalid or duplicate article path');seen.add(a.slug.current);
    if(!a.title?.trim()||!routeSlug(a.category?.slug?.current)||!a.category?.title?.trim())throw new Error('Missing title/category');
    if(!a.authors?.length||a.authors.some((p:any)=>!p.name?.trim()||!routeSlug(p.slug?.current)))throw new Error('Missing author');

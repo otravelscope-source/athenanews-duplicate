@@ -1,6 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {articles} from '../lib/content';
+import {videoFor} from '../legacy/views.mjs';
+const films = [
+ {id:'Sgp1cHVmoGc',title:'Keeping girls in school in Uganda',source:'UNICEF Uganda',href:''},
+ {id:'r9PeYPHdpNo',title:'Our Planet: Coastal Seas',source:'Netflix · Nature documentary',href:''},
+ {id:'JkaxUblCGz0',title:'Our Planet: Forests',source:'Netflix · Nature documentary',href:''},
+ ...(await articles()).flatMap(a=>{const v=videoFor({...a,id:a.slug.current});return v?[{...v,href:'/article/'+a.slug.current}]:[];})
+];
+const seen=new Set<string>();
 ---
-<Layout title="Watch | ATHENA" description="Selected films on the lives of women and children.">
-<section class="text-page"><p class="eyebrow">ATHENA / WATCH</p><h1>Watch</h1><p class="eyebrow">FROM THE ARCHIVE · UNICEF UGANDA</p><h2>Keeping girls in school in Uganda</h2><p>UNICEF Uganda looks at the information and skills girls need to stay in school and finish their education.</p><iframe class="news-video" title="UNICEF Uganda: Go to school, stay in school, and complete school" src="https://www.youtube-nocookie.com/embed/Sgp1cHVmoGc" loading="lazy" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=Sgp1cHVmoGc">Watch on UNICEF Uganda’s YouTube channel</a></p></section>
+<Layout title="Watch | ATHENA" description="Documentaries and reporting on women, children and the natural world.">
+<main class="films"><p class="eyebrow">ATHENA / VIDEO</p><h1>Watch</h1><p>Documentaries, archive footage and films behind our reporting.</p><div class="screenings">{films.filter(f=>!seen.has(f.id)&&seen.add(f.id)).map(f=><article><iframe title={f.title} src={'https://www.youtube-nocookie.com/embed/'+f.id} loading="lazy" allowfullscreen></iframe><p class="eyebrow">{f.source}</p><h2>{f.title}</h2><a href={'https://www.youtube.com/watch?v='+f.id}>Watch on YouTube</a>{f.href && <> · <a href={f.href}>Read the story</a></>}</article>)}</div></main>
 </Layout>
+<style>.films{max-width:74rem;margin:auto;padding:2rem 1rem}.screenings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:2rem}.screenings iframe{width:100%;aspect-ratio:16/9;border:0}.screenings h2{margin:.5rem 0}</style>
