@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "approved": true,
+  "topicKey": "boreal-wildfires-climate-overshoot-2026-report",
+  "slug": "boreal-wildfires-climate-overshoot-2026-report",
+  "title": "Northern forests may carry wildfire damage long after temperatures fall, new assessment warns",
+  "subtitle": "Climate & Environment: A report presented at COP31 examines how warming beyond climate targets could damage forest recovery, carbon stores and communities—and why preparing for smoke must reach well beyond the fire line.",
+  "author": "ATHENA",
+  "category": "World",
+  "publishedAt": "2026-11-21T06:14:47.981464+00:00",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A new scientific assessment presented at COP31 on 17 November warns that increasingly severe and repeated wildfires could leave northern forests damaged for decades or centuries, even if global temperatures subsequently decline."
+    },
+    {
+      "style": "normal",
+      "text": "The report, Wildland Fires in the Circumboreal Forest under Climate Overshoot, was published by Natural Resources Canada on 16 November. Experts from the Canadian agency and the International Institute for Applied Systems Analysis led the scientific work, with the United Nations Environment Programme supporting its framing and collaboration."
+    },
+    {
+      "style": "normal",
+      "text": "Its subject is a belt of forest stretching across northern North America, Europe and Asia. The concern is not simply that more trees may burn. It is that repeated fire can change whether forests recover, how much carbon landscapes retain and whether the communities that depend on them can sustain their livelihoods."
+    },
+    {
+      "style": "h2",
+      "text": "Cooling later cannot undo every loss"
+    },
+    {
+      "style": "normal",
+      "text": "Climate overshoot means temperatures rise beyond a target—such as 1.5°C above pre-industrial levels—before declining. The distinction matters because a lower temperature in the future does not automatically restore an ecosystem damaged during the hotter period."
+    },
+    {
+      "style": "normal",
+      "text": "The new report reviews scientific studies across the circumboreal region. It examines changing fire regimes and their consequences rather than following a single group of forests in one experiment. Its conclusions concern risks under changing climate conditions; they do not identify the date or location of the next disaster."
+    },
+    {
+      "style": "normal",
+      "text": "IIASA says the region stores roughly a third of the world’s terrestrial forest carbon, much of it below ground in soils, peatlands and permafrost. Fire belongs to the natural cycle of these forests, but hotter, drier conditions can push fire activity beyond what some landscapes can recover from."
+    },
+    {
+      "style": "normal",
+      "text": "The assessment’s warning is consistent with the Intergovernmental Panel on Climate Change’s broader finding that the risks of overshoot grow with its size and duration, and that some impacts are irreversible. That does not mean every forest is destined to disappear, or that reducing warming later has no value. It means preventing damage and repairing it are not interchangeable policies."
+    },
+    {
+      "style": "h2",
+      "text": "A risk assessment, not a local forecast"
+    },
+    {
+      "style": "normal",
+      "text": "In its public summary, IIASA reports modelling that indicates the potential for the boreal area burned to double by the end of the century. The summary does not supply the full scenario assumptions, baseline or uncertainty range needed to interpret that figure as a precise forecast. It should therefore be treated as a warning about potential scale, not a prediction that any particular community will experience twice as much fire."
+    },
+    {
+      "style": "normal",
+      "text": "Natural Resources Canada’s account also identifies risks to wildlife habitat, infrastructure and the cultural and economic benefits forests provide. These are connected losses: protecting a carbon store is not enough if the people living with it lack a workable evacuation plan or a say in managing the land."
+    },
+    {
+      "style": "normal",
+      "text": "The institutions behind the assessment call for emissions reductions alongside prevention, early warning, preparedness, restoration and fire management informed by Indigenous and local knowledge. Such recommendations identify work to be done; publication of a report is not evidence that governments have funded or delivered it."
+    },
+    {
+      "style": "h2",
+      "text": "Smoke makes this a family health story"
+    },
+    {
+      "style": "normal",
+      "text": "The effects of a fire can travel far beyond its perimeter. In Canada in May 2023, NASA documented smoke from Nova Scotia fires moving over the northeastern United States. That historical episode illustrates the reach of smoke; it is not evidence of a new fire emergency this week."
+    },
+    {
+      "style": "normal",
+      "text": "The US Centers for Disease Control and Prevention identifies children, pregnant people and people with certain existing health conditions as groups needing particular protection from wildfire smoke. Its advice includes following local air-quality and evacuation guidance and reducing indoor exposure with a cleaner-air room and suitable filtration where available."
+    },
+    {
+      "style": "normal",
+      "text": "For schools, maternity services and local authorities, that makes preparation a practical responsibility: warnings must reach families, and advice to find cleaner air needs somewhere accessible to go. Households’ ability to protect themselves cannot be assumed to be equal."
+    },
+    {
+      "style": "normal",
+      "text": "The assessment’s central challenge is to act on two timescales at once. Communities need protection during the next smoke episode, while governments need to reduce the warming that increases future risk. Promising to cool the planet later cannot substitute for protecting the forests and families exposed in the meantime."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Boreal_Forest_and_Lake.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boreal_Forest_and_Lake.jpg",
+    "alt": "Conifer trees grow on a rocky shore beside a Canadian lake.",
+    "caption": "Archive: Boreal forest on the Canadian Shield. The photograph is dated 2 November 2018 in its source record.",
+    "credit": "TheTrueNorthStrongAndFree1 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "originalDate": "2018-11-02"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Iss069e015007_lrg.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iss069e015007_lrg.jpg",
+      "alt": "A broad plume of smoke rises over coastal Nova Scotia, photographed from space.",
+      "caption": "Archive: Smoke from a fire near Shelburne, Nova Scotia, photographed from the International Space Station on 29 May 2023. This illustrates Canada’s wider wildfire emergency, not a current boreal fire.",
+      "credit": "NASA / ISS Expedition 69 crew / Wikimedia Commons",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "originalDate": "2023-05-29",
+      "afterParagraph": 8
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Downtown_Calgary_Alberta_Canada_Wildfire_Smoke_-_2023.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Calgary_Alberta_Canada_Wildfire_Smoke_-_2023.jpg",
+      "alt": "Calgary’s skyline beneath dense wildfire smoke and an orange sun.",
+      "caption": "Archive: Wildfire smoke obscures downtown Calgary, Alberta, on 17 May 2023.",
+      "credit": "Dwayne Reilander / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "originalDate": "2023-05-17",
+      "afterParagraph": 12
+    }
+  ],
+  "sourceLibraryId": "libfile_f853df1b0894819183ccd0300f5454f5"
+}
