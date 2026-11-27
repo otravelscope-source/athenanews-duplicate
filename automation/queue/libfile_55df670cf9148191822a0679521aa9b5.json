@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_55df670cf9148191822a0679521aa9b5",
+  "topicKey": "financial-cost-leaving-abusive-relationship",
+  "slug": "financial-cost-leaving-abusive-relationship",
+  "title": "The financial cost of leaving an abusive relationship",
+  "subtitle": "A UK case shows why paying for a new home can leave a survivor paying for the old one too.",
+  "author": "ATHENA",
+  "category": "Justice",
+  "publishedAt": "2026-11-27T11:34:05Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "Annie was paying for two homes, but she could live in only one. After separating from her partner, she paid rent on a new place while continuing to cover her share of the mortgage on the home she had left. The British charity Surviving Economic Abuse documented her experience in its 2024 report on joint mortgages."
+    },
+    {
+      "style": "normal",
+      "text": "Before the separation, a £20,000 borrowing facility had been presented to Annie as money she might one day use for a deposit. According to the charity, her partner instead pressured her to agree to spend it on a car. By the time she needed a deposit, the borrowing had already served someone else’s plans."
+    },
+    {
+      "style": "normal",
+      "text": "Her experience helps explain why there is no single price for leaving. Rent on a new home is a new expense; a payment on the old home is an obligation that may survive the move. Emergency assistance that covers one can leave the other untouched. Annie’s case illustrates that distinction. It does not establish an average cost for British women, much less for survivors everywhere."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/To_let%2C_London_Rd_-_geograph.org.uk_-_4549448.jpg",
+    "alt": "A home advertised to let in Southborough, Kent, in 2015. Illustrative archive photograph; neither property nor occupants are connected to Annie.",
+    "caption": "A home advertised to let in Southborough, Kent, in 2015. Illustrative archive photograph; neither property nor occupants are connected to Annie.",
+    "credit": "N Chadwick",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:To_let%2C_London_Rd_-_geograph.org.uk_-_4549448.jpg"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Nationwide_Building_Society%2C_Piper's_Way%2C_Swindon_-_geograph.org.uk_-_602238.jpg",
+      "alt": "Archive: building society premises in Swindon, 2007. The lender pictured is not identified in Annie’s case.",
+      "caption": "Archive: building society premises in Swindon, 2007. The lender pictured is not identified in Annie’s case.",
+      "credit": "Brian Robert Marshall",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nationwide_Building_Society%2C_Piper's_Way%2C_Swindon_-_geograph.org.uk_-_602238.jpg",
+      "afterParagraph": 1
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Street_of_terraced_housing.jpg",
+      "alt": "Archive: a street of terraced housing in 2004. These are not Annie’s homes.",
+      "caption": "Archive: a street of terraced housing in 2004. These are not Annie’s homes.",
+      "credit": "Duncharris",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Street_of_terraced_housing.jpg",
+      "afterParagraph": 2
+    }
+  ]
+}
