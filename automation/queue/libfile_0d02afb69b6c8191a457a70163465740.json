@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_0d02afb69b6c8191a457a70163465740",
+  "topicKey": "what-nasa-hopes-to-discover-beneath-europas-ice",
+  "slug": "what-nasa-hopes-to-discover-beneath-europas-ice",
+  "title": "What NASA hopes to discover beneath Europa’s ice",
+  "subtitle": "Space & Astronomy | How a spacecraft can investigate an ocean without landing on the ice.",
+  "author": "ATHENA",
+  "category": "World",
+  "publishedAt": "2026-11-27T11:34:14Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "From above, Europa offers a view of ice. What scientists want to know is whether the ocean thought to lie underneath can exchange material with that surface. If the shell holds pockets of water, or if material from below has reached the surface, a spacecraft flying past Jupiter’s moon may be able to detect clues without landing or drilling."
+    },
+    {
+      "style": "normal",
+      "text": "NASA designed Europa Clipper to approach the question with several instruments. Radar can probe the ice for internal structures. Other instruments examine the surface’s composition and measure the magnetic environment around the moon. Those observations answer different questions: what the ice contains, how it is arranged and what can be inferred about the water below it."
+    },
+    {
+      "style": "normal",
+      "text": "The distinction matters for readers following the search for life. Evidence that a place could sustain living organisms is not evidence that organisms live there. Europa Clipper carries no instrument designed to detect life itself. Its contribution will be to narrow a much larger mystery: which parts of this distant moon, if any, offer conditions in which life could persist?"
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Europa_Clipper.jpg",
+    "alt": "Europa Clipper with its instruments installed at the Jet Propulsion Laboratory in January 2024.",
+    "caption": "Europa Clipper with its instruments installed at the Jet Propulsion Laboratory in January 2024.",
+    "credit": "NASA/JPL-Caltech",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Europa_Clipper.jpg"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/NASA's_SpaceX_Europa_Clipper_Liftoff_(KSC-20241014-PH-KLS01_0071).jpg",
+      "alt": "Europa Clipper launches from Florida on 14 October 2024.",
+      "caption": "Europa Clipper launches from Florida on 14 October 2024.",
+      "credit": "NASA/Kim Shiflett",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NASA's_SpaceX_Europa_Clipper_Liftoff_(KSC-20241014-PH-KLS01_0071).jpg",
+      "afterParagraph": 1
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Europa_Clipper_deployment.png",
+      "alt": "Launch footage shows the spacecraft separating from the rocket’s second stage on 14 October 2024.",
+      "caption": "Launch footage shows the spacecraft separating from the rocket’s second stage on 14 October 2024.",
+      "credit": "NASA+",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Europa_Clipper_deployment.png",
+      "afterParagraph": 2
+    }
+  ]
+}
