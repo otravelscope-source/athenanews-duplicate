@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_61bf0df8f9808191b5ac16e7e9795c81",
+  "topicKey": "bangladesh-child-marriage-law-and-enforcement",
+  "slug": "bangladesh-child-marriage-law-and-enforcement",
+  "title": "Why child marriage persists: the gap between Bangladesh’s law and a girl’s power to say no",
+  "subtitle": "A youth dialogue in Dhaka puts the distance between legal protection and everyday choices back in focus.",
+  "author": "ATHENA",
+  "category": "Children",
+  "publishedAt": "2026-11-27T10:18:12Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A girl can be too young to marry under Bangladesh’s ordinary legal threshold and still have little say over whether a wedding goes ahead. On Wednesday in Dhaka, young people brought child marriage into the same public discussion as child labour and children missing school. The connection matters: a law may set an age, but it cannot by itself keep a classroom place open or give a girl somewhere to turn when adults decide she should marry."
+    },
+    {
+      "style": "normal",
+      "text": "Bangladesh’s 2025 Multiple Indicator Cluster Survey found that 47.2 per cent of women aged 20 to 24 had first married before their eighteenth birthday, down from 51.4 per cent in 2019. These women were describing what happened as they grew up. The figures do not count weddings held in 2025. They show both progress and its limits: among these young women, marrying in childhood was still close to a one-in-two experience."
+    },
+    {
+      "style": "normal",
+      "text": "The distinction between a legal minimum and an absolute ban matters here. Bangladesh’s 2017 law sets the ordinary minimum at 18 for women and 21 for men, but allows an exception under special circumstances. An October review published by UNICEF Bangladesh examined reforms to the law. Removing an exception and enforcing an age threshold are separate jobs: even an unequivocal rule depends on somebody being able to establish a child’s age and act before a ceremony."
+    },
+    {
+      "style": "normal",
+      "text": "Prevention campaigns are hardly new. In 2015, officials in Dhaka launched a cartoon about preventing child marriage. Eleven years later, the dialogue at the Bangladesh Shishu Academy put children and young people on the public agenda again. A photograph can document that an event took place. It cannot tell us whether a girl who objects to a wedding can reach an official in time, or return to school afterwards."
+    },
+    {
+      "style": "normal",
+      "text": "That is the question behind the national percentage. A falling rate matters. So does the distance between knowing a right and being able to exercise it, especially when the people a girl depends on for housing, money or permission to attend school are also making decisions about her marriage."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Abu_Zafar_Md._Zahid_Hussain_at_Child_and_Youth-Led_Dialogue_on_child_marriage_and_child_labour,_Bangladesh_Shishu_Academy,_Dhaka,_2026-11-25.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Zafar_Md._Zahid_Hussain_at_Child_and_Youth-Led_Dialogue_on_child_marriage_and_child_labour,_Bangladesh_Shishu_Academy,_Dhaka,_2026-11-25.jpg",
+    "alt": "Abu Zafar Md. Zahid Hussain addresses the youth dialogue on child marriage and child labour in Dhaka on 25 November 2026.",
+    "caption": "Abu Zafar Md. Zahid Hussain addresses the youth dialogue on child marriage and child labour in Dhaka on 25 November 2026.",
+    "credit": "Bangladesh Press Information Department / Wikimedia Commons",
+    "license": "Public domain"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Dhaka_Child_Marriage_Prevention_Cartoon_Launch_(PID-0057575).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhaka_Child_Marriage_Prevention_Cartoon_Launch_(PID-0057575).jpg",
+      "alt": "Archive: Launch of a child-marriage prevention cartoon in Dhaka, 26 October 2015.",
+      "caption": "Archive: Launch of a child-marriage prevention cartoon in Dhaka, 26 October 2015.",
+      "credit": "Bangladesh Press Information Department / Wikimedia Commons",
+      "license": "Public domain",
+      "afterParagraph": 2
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Abu_Zafar_Md._Zahid_Hussain_at_Bangladesh_Shishu_Academy,_2026-11-25.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Zafar_Md._Zahid_Hussain_at_Bangladesh_Shishu_Academy,_2026-11-25.jpg",
+      "alt": "Participants gather for a group photograph at the Bangladesh Shishu Academy after the youth dialogue, Dhaka, 25 November 2026.",
+      "caption": "Participants gather for a group photograph at the Bangladesh Shishu Academy after the youth dialogue, Dhaka, 25 November 2026.",
+      "credit": "Bangladesh Press Information Department / Wikimedia Commons",
+      "license": "Public domain",
+      "afterParagraph": 3
+    }
+  ]
+}
