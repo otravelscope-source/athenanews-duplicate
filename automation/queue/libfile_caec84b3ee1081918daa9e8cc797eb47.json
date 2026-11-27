@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "approved": true,
+  "topicKey": "un-disaster-risk-financing-bangladesh-explainer-2026-11",
+  "slug": "un-disaster-risk-financing-bangladesh-explainer-2026-11",
+  "title": "Can disaster money reach families before the flood?",
+  "subtitle": "Climate & Environment | Explainer: A new UN financing initiative aims to turn warnings into action. Evidence from Bangladesh shows both the promise and the delivery risks.",
+  "author": "ATHENA",
+  "category": "World",
+  "publishedAt": "2026-11-27T05:06:57Z",
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A United Nations initiative launched on 12 November aims to secure access to more than $3 billion in disaster-risk financing by 2030, with a goal of protecting 75 million people. The proposal addresses a practical failure in emergency aid: a warning can arrive before a flood while the money needed to act arrives afterwards."
+    },
+    {
+      "style": "normal",
+      "text": "The Disaster Risk Financing Platform brings together six UN agencies to coordinate expertise, data and financing arrangements. According to UNICEF’s launch announcement, OCHA and UNICEF had already established insurance policies supporting their anticipatory-action programmes, assisted by World Food Programme specialists. The $3 billion and 75 million figures remain ambitions, not a total already raised or a count of people already protected."
+    },
+    {
+      "style": "normal",
+      "text": "For a family facing evacuation, timing changes the choices available. Money received before roads become impassable can pay for transport or supplies. After a house floods, the same payment may be absorbed by replacement costs. The central question is whether a financial arrangement gives people usable help while those choices remain open."
+    },
+    {
+      "style": "h2",
+      "text": "What Bangladesh’s floods can teach"
+    },
+    {
+      "style": "normal",
+      "text": "Bangladesh offers evidence from an earlier emergency. In July 2020, the World Food Programme sent one-off transfers of 4,500 taka through mobile money to 23,434 households exposed to severe flooding. An evaluation published in The World Bank Economic Review on 11 May 2026 examined that intervention; it did not study the new UN platform."
+    },
+    {
+      "style": "normal",
+      "text": "Researchers Ashley Pople, Ruth Hill, Stefan Dercon and Ben Brunckhorst analysed a sample of 9,038 households. Almost all respondents were women. They found improved welfare and reduced asset losses among recipients, including benefits still visible about three months after the flooding."
+    },
+    {
+      "style": "normal",
+      "text": "This was not a randomised experiment. Eligibility for payment depended in practice on having an active, correctly reported account with the selected mobile-money provider. Researchers compared recipients with households that did not receive transfers, checking observed differences, but lacked baseline data and could not rule out unmeasured differences between groups. The findings support early assistance; they do not prove that every financing model will produce the same results."
+    },
+    {
+      "style": "normal",
+      "text": "NASA observations provide a separate record of that flood season’s physical scale. An Aqua satellite image acquired on 25 July 2020 shows rivers spreading beyond their banks. Its vivid colours combine visible and infrared measurements: dark blue identifies water and bright green vegetation. It is an observation of the 2020 floods, not a forecast or an image of a current emergency."
+    },
+    {
+      "style": "normal",
+      "text": "Earlier that July, WFP had described the practical purpose of advance payments in northern Bangladesh: allowing households to buy essentials and arrange transport for themselves and livestock. Its account of the previous year’s assistance said transfers went to senior women in recipient households. These details place families’ decisions at the centre of preparedness, rather than treating them simply as the final recipients of an institutional payment."
+    },
+    {
+      "style": "h2",
+      "text": "A forecast still needs a route to the household"
+    },
+    {
+      "style": "normal",
+      "text": "The new platform’s announcement says less than two per cent of global humanitarian financing is pre-arranged. It proposes closer cooperation with insurers and financial markets to expand that share. Whether this makes assistance cheaper and more dependable must be demonstrated through costs and delivery records, not inferred from the existence of a policy."
+    },
+    {
+      "style": "normal",
+      "text": "A useful public account would show what activates a payment, when the money becomes available and when households or frontline services actually receive it. It would also identify who remains outside coverage and what happens when serious losses occur without the agreed trigger being reached. Speed measured at an agency’s bank account is not necessarily speed experienced by a family."
+    },
+    {
+      "style": "normal",
+      "text": "Digital payment systems need the same scrutiny. An efficient transfer route must include a workable alternative for an eligible person whose account cannot receive money. Otherwise an administrative detail risks deciding who can act on a warning."
+    },
+    {
+      "style": "normal",
+      "text": "Financial preparedness also depends on physical protection. British aid photographs from southern Bangladesh in May 2012 documented a meeting with beneficiaries of a programme supporting flood-resilient housing and sanitation. That older work illustrates a different part of disaster protection: the buildings and services that must exist before emergency money can be useful."
+    },
+    {
+      "style": "normal",
+      "text": "Advance payments cannot create an evacuation road overnight or make an inaccessible shelter suitable for a child with a disability. They belong alongside resilient infrastructure, public services and efforts to limit future warming. They should be assessed by whether people can protect themselves, not only by the value of financial coverage arranged on their behalf."
+    },
+    {
+      "style": "normal",
+      "text": "For women managing household supplies, older relatives or children’s needs, earlier help can mean more room to decide what to do. The promise of disaster financing is therefore concrete: turning a warning into a safer journey, food purchased in time or fewer possessions lost. The next test is whether the new platform can deliver that opportunity at the scale it promises."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flood_of_Bangladesh_01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flood_of_Bangladesh_01.jpg",
+    "alt": "Floodwater in Bangladesh",
+    "caption": "Floodwater in Bangladesh. Archive photograph, 7 July 2020; the location is not identified more precisely by the photographer.",
+    "credit": "Frameofashik / Wikimedia Commons",
+    "license": "CC BY-SA 4.0"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Flooding_in_Bangladesh_%28MODIS_2020-07-31%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flooding_in_Bangladesh_(MODIS_2020-07-31).jpg",
+      "alt": "Archive satellite observation of flooding in Bangladesh, acquired on 25 July 2020. Aqua MODIS combines visible and infrared measurements; water appears dark blue and vegetation bright green.",
+      "caption": "Archive satellite observation of flooding in Bangladesh, acquired on 25 July 2020. Aqua MODIS combines visible and infrared measurements; water appears dark blue and vegetation bright green.",
+      "credit": "MODIS Land Rapid Response Team / NASA GSFC",
+      "license": "Public domain",
+      "afterParagraph": 7
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bangladeshi_men_in_a_cyclone_shelter%2C_May_2012_%288406366902%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bangladeshi_men_in_a_cyclone_shelter,_May_2012_(8406366902).jpg",
+      "alt": "A meeting in a cyclone shelter with recipients of improved flood-resilient housing and sanitation in southern Bangladesh",
+      "caption": "A meeting in a cyclone shelter with recipients of improved flood-resilient housing and sanitation in southern Bangladesh. Archive photograph, 15 May 2012; not an evacuation from a current disaster.",
+      "credit": "Diana Dalton / DFID",
+      "license": "CC BY-SA 2.0",
+      "afterParagraph": 13
+    }
+  ],
+  "sourceLibraryId": "libfile_caec84b3ee1081918daa9e8cc797eb47",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  }
+}
