@@ -119,14 +119,6 @@ export async function main() {
     await summary('Verified image update: '+await verifyPage(item));
     return;
   }
-  const photoFixId='article-libfile-c219ad52e16081919fd5995e5f2a69c7';
-  const {result:photoFix}=await request('/query/production?query='+encodeURIComponent('*[_id=="'+photoFixId+'"][0]{_rev}'));
-  if(photoFix?._rev==='D6JOlsbIYltTSUcTX8Ru7W'){
-    const replacements=[{"url":"https://upload.wikimedia.org/wikipedia/commons/0/04/Hannah_Godefa%2C_UNICEF_National_Ambassador_for_Ethiopia%2C_speaking_at_Girl_Summit_2014_(14538275079).jpg","sourceUrl":"https://commons.wikimedia.org/wiki/File:Hannah_Godefa%2C_UNICEF_National_Ambassador_for_Ethiopia%2C_speaking_at_Girl_Summit_2014_(14538275079).jpg","alt":"Archive: Hannah Godefa, then UNICEF’s national ambassador for Ethiopia, addresses the Girl Summit in London on 22 July 2014.","caption":"Archive: Hannah Godefa, then UNICEF’s national ambassador for Ethiopia, addresses the Girl Summit in London on 22 July 2014.","credit":"Marisol Grandon / UK Department for International Development","license":"CC BY 2.0"},{"url":"https://upload.wikimedia.org/wikipedia/commons/a/a4/Increase_in_education_%3D_decrease_in_child_marriage_(14521144199).jpg","sourceUrl":"https://commons.wikimedia.org/wiki/File:Increase_in_education_%3D_decrease_in_child_marriage_(14521144199).jpg","alt":"Archive: Bayush and her friends in a July 2014 UK aid photograph documenting efforts to keep girls in school.","caption":"Archive: Bayush and her friends in a July 2014 UK aid photograph documenting efforts to keep girls in school.","credit":"Jessica Lea / UK Department for International Development","license":"CC BY 2.0"}];
-    for(const im of replacements) await checkImage(im.url);
-    const set={}; ['image2-0','image5-0'].forEach((key,i)=>set['body[_key=="'+key+'"]']={...imageDocument(replacements[i]),_key:key});
-    await request('/mutate/production?visibility=sync',{mutations:[{patch:{id:photoFixId,ifRevisionID:photoFix._rev,set}}]});
-  }
   const items=[], held=[];
   for(const file of (await readdir('automation/queue')).filter(f=>f.endsWith('.json'))) {
     try {const item=JSON.parse(await readFile('automation/queue/'+file,'utf8')); if(existing.some(e=>e.sourceLibraryId===item.sourceLibraryId || e.slug===item.slug || norm(e.title||'')===norm(item.title||''))) continue; items.push(validate(item));}
