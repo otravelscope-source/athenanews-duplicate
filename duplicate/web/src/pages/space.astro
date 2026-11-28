@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import { articles } from '../lib/content';
 const stories=(await articles()).filter(a=>/space|astronomy/i.test(a.category?.title||'') || /\b(voyager|telescope|astronomy|asteroid|galaxy|orbital|exoplanet|nasa|interstellar)\b/i.test(a.title));
 const films = [
+ {title:'The American Rocketeer',id:'Ykl57izCofs',topic:'Space Saturday · Added 28 November',description:'This 90-minute film follows Frank Malina and the origins of NASA’s Jet Propulsion Laboratory through archival footage and interviews.',source:'NASA JPL',url:'https://plus.nasa.gov/video/jpl-and-the-space-age-the-american-rocketeer/'},
  {title:'Hubble: The Great Space Telescope', id:'Lo43Gq_Xe1M', topic:'Deep space', description:'The telescope’s discoveries and the human work behind its extraordinary view of the universe.', source:'NASA Goddard', url:'https://plus.nasa.gov/video/hubble-the-great-space-telescope/'},
  {title:'The Stuff of Dreams', id:'Qj_62FWfH78', topic:'Voyager', description:'The people and machines behind Voyager’s journey to the outer planets.', source:'NASA JPL', url:'https://www.jpl.nasa.gov/who-we-are/documentary-series-jpl-and-the-space-age/episode-5-the-stuff-of-dreams/'},
  {title:'The Pathfinders', id:'1rVH0YlcKyY', topic:'Mars', description:'How an ambitious landing and a small rover opened a new chapter in exploring Mars.', source:'NASA JPL', url:'https://www.jpl.nasa.gov/who-we-are/documentary-series-jpl-and-the-space-age/episode-8-the-pathfinders/'},
