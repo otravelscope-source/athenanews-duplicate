@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_783e9787e4288191ab7138e5dc0221ca",
+  "title": "Before Roman can find hidden planets, Hubble is learning which star is which",
+  "topicKey": "hubble-roman-galactic-bulge-before-planet-search",
+  "slug": "hubble-roman-galactic-bulge-before-planet-search",
+  "subtitle": "Space & Astronomy | New observations towards the heart of the Milky Way give astronomers a record of crowded star fields before gravity briefly changes their light.",
+  "author": "ATHENA",
+  "category": "World",
+  "publishedAt": "2026-11-28T16:59:00Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "A star briefly brightens near the centre of the Milky Way. Has the star itself changed, has another object bent its light, or is the telescope measuring several neighbours together? NASA released Hubble images on 25 November that will help astronomers untangle those possibilities when the Nancy Grace Roman Space Telescope surveys the same crowded region. The useful discovery in these pictures is not a new planet. It is a clearer record of what the sky looked like before one might give itself away."
+    },
+    {
+      "style": "normal",
+      "text": "The target is the galactic bulge, the dense concentration of stars surrounding the middle of the Milky Way’s disk. NASA says the bulge holds nearly a quarter of the galaxy’s stellar mass. That makes it both a promising hunting ground and a difficult one. More stars along a line of sight mean more opportunities for a chance alignment. They also mean more sources of light close enough together to confuse a measurement."
+    },
+    {
+      "style": "normal",
+      "text": "The alignment matters because gravity can act as a lens. When a foreground object crosses close to our line of sight to a more distant star, its gravity bends the background light. For a time, that star appears brighter from Earth. The star has not necessarily produced any extra light; what has changed is the path the light takes to the observer. A planet accompanying the nearer star can leave an additional disturbance in the pattern of brightening. This technique, called gravitational microlensing, allows astronomers to investigate a planet without seeing light from the planet itself."
+    },
+    {
+      "style": "normal",
+      "text": "Imagine trying to interpret that change with only the picture taken at its brightest. The total light in one small patch of sky might include the background star, the foreground star and an unrelated neighbour. Hubble can distinguish individual stars where a less detailed image would blend their light. Knowing their positions and brightness before an event gives researchers a starting point for deciding which light changed and which was there all along. It does not predict which star will brighten. That is precisely why observing a large field in advance is useful."
+    },
+    {
+      "style": "normal",
+      "text": "Hubble also gives the investigation a longer clock. Positions recorded years apart can reveal that stars which look adjacent from Earth are moving differently across the sky. Earlier Hubble work with Wide Field Camera 3 measured positions, brightness and motion in the bulge. Another project, the Sagittarius Window Eclipsing Extrasolar Planet Search, examined 180,000 stars there with Hubble’s Advanced Camera for Surveys. That number describes the earlier search, not the number of planets found or the size of this week’s new sample."
+    },
+    {
+      "style": "normal",
+      "text": "The new observations belong to programme 17776, led by S. Terry. NASA describes them as groundwork for Roman investigations of planets and compact objects, including black holes and neutron stars. Objects that give off little or no detectable light can still bend the light behind them. But an isolated brightening is not enough to identify its cause: astronomers must compare its timing and shape with other observations and test competing explanations."
+    },
+    {
+      "style": "normal",
+      "text": "The mission carries the name of Nancy Grace Roman, NASA’s first chief of astronomy. An archive photograph shows her in 1962 with a model of the Orbiting Solar Observatory, long before either telescope in this story could supply a single image. The connection between them is now practical as well as historical. When Roman records a brief alignment months or years from now, some of the evidence needed to interpret it will have been collected by Hubble before anyone knew where to look."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Hubble_extrasolar_planet_search_field_in_Sagittarius.jpg",
+    "alt": "Archive: part of Hubble’s earlier SWEEPS field in Sagittarius, released in 2006. It is not the new November 2026 image.",
+    "caption": "Archive: part of Hubble’s earlier SWEEPS field in Sagittarius, released in 2006. It is not the new November 2026 image.",
+    "credit": "NASA, ESA, K. Sahu (STScI) and the SWEEPS science team / ESA/Hubble",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hubble_extrasolar_planet_search_field_in_Sagittarius.jpg"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Space_Telescope_Hubble_2009.jpg",
+      "alt": "Archive: Hubble after capture by the shuttle Atlantis during its May 2009 servicing mission.",
+      "caption": "Archive: Hubble after capture by the shuttle Atlantis during its May 2009 servicing mission.",
+      "credit": "NASA/JSC",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Space_Telescope_Hubble_2009.jpg",
+      "afterParagraph": 2
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Nancy_Grace_Roman_with_OSO_Model_(41124537335).jpg",
+      "alt": "NASA astronomer Nancy Grace Roman with an Orbiting Solar Observatory model in 1962.",
+      "caption": "NASA astronomer Nancy Grace Roman with an Orbiting Solar Observatory model in 1962.",
+      "credit": "NASA Hubble Space Telescope",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nancy_Grace_Roman_with_OSO_Model_(41124537335).jpg",
+      "afterParagraph": 5
+    }
+  ]
+}
