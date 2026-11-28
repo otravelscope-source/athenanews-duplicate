@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "approved": true,
+  "sourceLibraryId": "libfile_c219ad52e16081919fd5995e5f2a69c7",
+  "title": "The UN has set a day to end child marriage. Who pays for a girl to return to school?",
+  "topicKey": "first-un-child-marriage-day-who-pays-for-protection",
+  "slug": "first-un-child-marriage-day-who-pays-for-protection",
+  "subtitle": "The first observance puts married girls back into the education debate. The resolution leaves the money for its activities to voluntary donors.",
+  "author": "ATHENA",
+  "category": "Children",
+  "publishedAt": "2026-11-28T16:58:51Z",
+  "review": {
+    "factsChecked": true,
+    "duplicatesChecked": true,
+    "imageRightsChecked": true
+  },
+  "paragraphs": [
+    {
+      "style": "normal",
+      "text": "The United Nations marked its first international day dedicated to ending child, early and forced marriage on Friday. For a girl who has already been married, the most consequential words in the General Assembly resolution are about what comes afterwards: governments are asked to invest in programmes that allow married girls and young women to stay in education or come back. A wedding is not supposed to end a pupil’s claim to a classroom."
+    },
+    {
+      "style": "normal",
+      "text": "The resolution does not, however, send a school the money to make that return possible. It says activities arising from the resolution depend on voluntary contributions. That distinction is the starting point for judging the new observance. Governments have agreed on what deserves attention. The text does not tell a headteacher how much money is available, when it will arrive or how many places it will support."
+    },
+    {
+      "style": "normal",
+      "text": "The Assembly adopted the measure without a vote on 4 September. Cabo Verde, Costa Rica, Morocco and Sierra Leone brought forward the draft. The agreement establishes 27 November as an annual occasion to examine progress towards a goal governments had already set: ending harmful practices, including child marriage, by 2030. It did not change the age at which anyone could legally marry on Friday. Nor does its voluntary funding clause mean that governments are barred from spending their own money. It means the resolution itself is not a funding award."
+    },
+    {
+      "style": "normal",
+      "text": "On its page for the observance, the UN describes Salma, who experienced gender-based violence and later returned to school with support. She wants to become a doctor. The account records something more specific than a pledge: one young woman was able to resume an education that had been interrupted. It does not establish how many others secured the same opportunity, or that a programme created by Friday’s observance was responsible for her return."
+    },
+    {
+      "style": "normal",
+      "text": "That matters because prevention and support require different measures of success. A programme working to stop an impending marriage might record whether the ceremony went ahead. A school reopening its doors to a married pupil needs to know whether she was admitted, whether she could attend regularly and whether she was still there the next term. Counting only marriages prevented leaves girls who are already married out of the picture. Counting enrolment alone can overlook a pupil who registers and then finds she cannot keep coming."
+    },
+    {
+      "style": "normal",
+      "text": "At the regional level, African Union Commissioner Amma A. Twum-Amoah used the inaugural observance to connect the 2030 target to Africa’s own commitments to children and young people. That creates an opportunity to compare what different institutions promise. It also leaves national and local decisions in view. A statement by a continental body cannot tell a family which school will readmit their daughter, which official can hear an appeal if she is turned away, or who will cover costs she cannot meet."
+    },
+    {
+      "style": "normal",
+      "text": "Those are questions governments can answer with records they already have reason to keep: a budget allocation, the rules governing readmission and figures showing how many returning pupils complete a term. Each measures something different. Money allocated is not necessarily money spent; a written entitlement is not necessarily a place offered. By the next 27 November, a useful account of progress would put those records alongside the experiences of girls who tried to use the system, including those who did not get back in."
+    },
+    {
+      "style": "normal",
+      "text": "The Athena Perspective."
+    }
+  ],
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/The_General_Assembly%2C_United_Nations_(926057573).jpg",
+    "alt": "Archive: United Nations General Assembly Hall in New York, June 2005. This is the chamber, not the September 2026 meeting.",
+    "caption": "Archive: United Nations General Assembly Hall in New York, June 2005. This is the chamber, not the September 2026 meeting.",
+    "credit": "Rob Young",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Assembly%2C_United_Nations_(926057573).jpg"
+  },
+  "inlineImages": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Abu_Zafar_Md._Zahid_Hussain_at_Child_and_Youth-Led_Dialogue_on_child_marriage_and_child_labour,_Bangladesh_Shishu_Academy,_Dhaka,_2026-11-25.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Zafar_Md._Zahid_Hussain_at_Child_and_Youth-Led_Dialogue_on_child_marriage_and_child_labour,_Bangladesh_Shishu_Academy,_Dhaka,_2026-11-25.jpg",
+      "alt": "Abu Zafar Md. Zahid Hussain addresses the youth dialogue on child marriage and child labour in Dhaka on 25 November 2026.",
+      "caption": "Bangladesh: a youth dialogue in Dhaka on 25 November 2026 addressed child marriage, child labour and children out of school, two days before the global observance.",
+      "credit": "Bangladesh Press Information Department / Wikimedia Commons",
+      "license": "Public domain",
+      "afterParagraph": 2
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Dhaka_Child_Marriage_Prevention_Cartoon_Launch_(PID-0057575).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhaka_Child_Marriage_Prevention_Cartoon_Launch_(PID-0057575).jpg",
+      "alt": "Archive: Launch of a child-marriage prevention cartoon in Dhaka, 26 October 2015.",
+      "caption": "Archive: Launch of a child-marriage prevention cartoon in Dhaka, 26 October 2015.",
+      "credit": "Bangladesh Press Information Department / Wikimedia Commons",
+      "license": "Public domain",
+      "afterParagraph": 5
+    }
+  ]
+}
